@@ -1,0 +1,37 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1742431022
+button.tscn::PackedScene::5164117487333656666::1742415809::0::1::::<><>::
+CORRECTFRETBOARD.png::CompressedTexture2D::5639831293400158881::1742427215::1742427215::1::::<><>::
+correctionPanel.tscn::PackedScene::5480896937872889607::1742430739::0::1::::<><>::uid://me2jpbaafg18::::res://Untitled.png<>uid://b2jv3o7pllest::::res://Untitled(1).png<>uid://c5ibnjbtydkab::::res://pause-removebg-preview.png
+correctly sized fretboard.png::CompressedTexture2D::2026531259413568667::1742427077::1742427078::1::::<><>::
+dashboard.tscn::PackedScene::1659203146353017986::1742427808::0::1::::<><>::uid://bx88dpk780kua::::res://WhitePanel.tscn<>uid://b3w5lb8ogfdok::::res://navbutton.tscn<>uid://bspae17tnocsm::::res://dashboardbutton.tscn<>uid://biaqjq2swqes2::::res://Tuner.tscn<>uid://77omgu2fg34l::::res://Scale.tscn
+dashboardbutton.tscn::PackedScene::3680794094586243864::1742422257::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::4119602603348103342::1742425861::0::1::::<><>::
+fretboard.png::CompressedTexture2D::3712859724921973526::1741803054::1741803054::1::::<><>::
+IMG_1090.jpeg.png::CompressedTexture2D::3613346105021597395::1741799692::1741799694::1::::<><>::
+MainDashboard.tscn::PackedScene::7968546396297699804::1742430739::0::1::::<><>::uid://bx88dpk780kua::::res://WhitePanel.tscn<>uid://b3w5lb8ogfdok::::res://navbutton.tscn<>uid://biaqjq2swqes2::::res://Tuner.tscn
+navbutton.gd::GDScript::-1::1742421506::0::1::::<>Button<>::
+navbutton.tscn::PackedScene::4398965873809480954::1742422255::0::1::::<><>::res://navbutton.gd
+node_2d.gd::GDScript::-1::1740061584::0::1::::<>Node2D<>::
+pause-removebg-preview.png::CompressedTexture2D::6895106106023612257::1741801992::1741801992::1::::<><>::
+README.md::TextFile::-1::1732572152::0::1::::<><>::
+Recording (7).mp3::AudioStreamMP3::1430488478247611148::1741817100::1741817119::1::::<><>::
+scale.gd::GDScript::-1::1742430733::0::1::::<>Node2D<>::
+Scale.tscn::PackedScene::2312974899242434869::1742430733::0::1::::<><>::res://scale.gd<>uid://ckc8to864bqj4::::res://correctionPanel.tscn<>uid://cml8gyhdu3rmf::::res://CORRECTFRETBOARD.png
+segment.tscn::PackedScene::4586988681181708247::1742431009::0::1::::<><>::res://node_2d.gd<>uid://cwid3kg8gi7gk::::res://sounds/2025-02-19 23-31-25.mp3
+show_spectrum.gd::GDScript::-1::1732573281::0::1::::<>Node2D<>::
+show_spectrum.tscn::PackedScene::7559994868945812833::1742415799::0::1::::<><>::res://show_spectrum.gd
+testing.gd::GDScript::-1::1741822815::0::1::::<>Node2D<>::
+testing.tscn::PackedScene::1743053076316878682::1742415799::0::1::::<><>::res://testing.gd
+tuner.gd::GDScript::-1::1741813013::0::1::::<>Node2D<>::
+Tuner.tscn::PackedScene::2948919859757960303::1742431022::0::1::::<><>::res://tuner.gd<>uid://dpscy1jboajby::::res://assets/171509-200.png
+Untitled Diagram.drawio.png::CompressedTexture2D::8624295177984584592::1732572169::1732572193::1::::<><>::
+Untitled(1).png::CompressedTexture2D::4301424706241258223::1741801986::1741801987::1::::<><>::
+Untitled.png::CompressedTexture2D::852179855017727253::1741801996::1741801997::1::::<><>::
+WhitePanel.tscn::PackedScene::4070898376192150312::1742415800::0::1::::<><>::
+::res://addons/::1742431002
+::res://assets/::1742431022
+171509-200.png::CompressedTexture2D::8249419177836613406::1732981713::1742431022::1::::<><>::
+::res://scenes/::1742430992
+::res://sounds/::1742431010
+2025-02-19 23-31-25.mp3::AudioStreamMP3::6333743638673095830::1740007984::1742431010::1::::<><>::

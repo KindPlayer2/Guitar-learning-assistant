@@ -1,0 +1,402 @@
+[gd_scene load_steps=13 format=3 uid="uid://dlsa2a63w0sue"]
+
+[ext_resource type="PackedScene" uid="uid://bx88dpk780kua" path="res://WhitePanel.tscn" id="1_0gm48"]
+[ext_resource type="PackedScene" uid="uid://b3w5lb8ogfdok" path="res://navbutton.tscn" id="2_ay8h4"]
+[ext_resource type="PackedScene" uid="uid://biaqjq2swqes2" path="res://Tuner.tscn" id="3_pghb2"]
+[ext_resource type="PackedScene" uid="uid://77omgu2fg34l" path="res://Scale.tscn" id="4_tx6tm"]
+
+[sub_resource type="FontVariation" id="FontVariation_cxjkt"]
+variation_embolden = 0.35
+spacing_glyph = 1
+spacing_space = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_20b4i"]
+font = SubResource("FontVariation_cxjkt")
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_3vjhj"]
+variation_embolden = 0.35
+spacing_glyph = 1
+spacing_space = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_56qhg"]
+font = SubResource("FontVariation_3vjhj")
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_5madt"]
+variation_embolden = 0.35
+spacing_glyph = 1
+spacing_space = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_i2oy6"]
+font = SubResource("FontVariation_5madt")
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontFile" id="FontFile_telgl"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/31/0/ascent = 0.0
+cache/0/31/0/descent = 0.0
+cache/0/31/0/underline_position = 0.0
+cache/0/31/0/underline_thickness = 0.0
+cache/0/31/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+cache/0/38/0/ascent = 0.0
+cache/0/38/0/descent = 0.0
+cache/0/38/0/underline_position = 0.0
+cache/0/38/0/underline_thickness = 0.0
+cache/0/38/0/scale = 1.0
+cache/0/39/0/ascent = 0.0
+cache/0/39/0/descent = 0.0
+cache/0/39/0/underline_position = 0.0
+cache/0/39/0/underline_thickness = 0.0
+cache/0/39/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/41/0/ascent = 0.0
+cache/0/41/0/descent = 0.0
+cache/0/41/0/underline_position = 0.0
+cache/0/41/0/underline_thickness = 0.0
+cache/0/41/0/scale = 1.0
+cache/0/42/0/ascent = 0.0
+cache/0/42/0/descent = 0.0
+cache/0/42/0/underline_position = 0.0
+cache/0/42/0/underline_thickness = 0.0
+cache/0/42/0/scale = 1.0
+cache/0/43/0/ascent = 0.0
+cache/0/43/0/descent = 0.0
+cache/0/43/0/underline_position = 0.0
+cache/0/43/0/underline_thickness = 0.0
+cache/0/43/0/scale = 1.0
+cache/0/44/0/ascent = 0.0
+cache/0/44/0/descent = 0.0
+cache/0/44/0/underline_position = 0.0
+cache/0/44/0/underline_thickness = 0.0
+cache/0/44/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_f6m7g"]
+font = SubResource("FontFile_telgl")
+font_size = 25
+font_color = Color(0.144063, 0.144063, 0.144063, 1)
+shadow_size = 0
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dashboard" parent="." instance=ExtResource("1_0gm48")]
+layout_mode = 0
+offset_left = 299.0
+offset_top = 101.0
+offset_right = 1136.0
+offset_bottom = 631.0
+
+[node name="Label" type="Label" parent="Dashboard"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 230.0
+offset_bottom = 60.0
+text = "Dashboard"
+label_settings = SubResource("LabelSettings_20b4i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Header" parent="." instance=ExtResource("1_0gm48")]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 1136.0
+offset_bottom = 85.0
+
+[node name="Label" type="Label" parent="Header"]
+layout_mode = 0
+offset_right = 374.0
+offset_bottom = 71.0
+text = "Guitar Learning Assistant"
+label_settings = SubResource("LabelSettings_56qhg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Navbar" parent="." instance=ExtResource("1_0gm48")]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 102.0
+offset_right = 283.0
+offset_bottom = 632.0
+
+[node name="Label2" type="Label" parent="Navbar"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 8.0
+offset_right = 267.0
+offset_bottom = 75.0
+text = "Navigation"
+label_settings = SubResource("LabelSettings_i2oy6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" parent="Navbar" node_paths=PackedStringArray("VisPanel", "InVisPanel1", "InVisPanel2", "InVisPanel3") instance=ExtResource("2_ay8h4")]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 67.0
+offset_right = 265.0
+offset_bottom = 136.0
+VisPanel = NodePath("../../Dashboard")
+InVisPanel1 = NodePath("../../Tuner")
+InVisPanel2 = NodePath("../../Scale")
+InVisPanel3 = NodePath("../../Chords")
+
+[node name="Label2" type="Label" parent="Navbar/Button"]
+layout_mode = 0
+offset_top = 7.0
+offset_right = 266.0
+offset_bottom = 58.0
+text = "dashboard"
+label_settings = SubResource("LabelSettings_f6m7g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" parent="Navbar" node_paths=PackedStringArray("VisPanel", "InVisPanel1", "InVisPanel2", "InVisPanel3") instance=ExtResource("2_ay8h4")]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 147.0
+offset_right = 265.0
+offset_bottom = 216.0
+VisPanel = NodePath("../../Tuner")
+InVisPanel1 = NodePath("../../Scale")
+InVisPanel2 = NodePath("../../Chords")
+InVisPanel3 = NodePath("../../Dashboard")
+
+[node name="Label2" type="Label" parent="Navbar/Button3"]
+layout_mode = 0
+offset_top = 7.0
+offset_right = 266.0
+offset_bottom = 58.0
+text = "Tuner
+"
+label_settings = SubResource("LabelSettings_f6m7g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" parent="Navbar" node_paths=PackedStringArray("VisPanel", "InVisPanel1", "InVisPanel2", "InVisPanel3") instance=ExtResource("2_ay8h4")]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 227.0
+offset_right = 265.0
+offset_bottom = 296.0
+VisPanel = NodePath("../../Scale")
+InVisPanel1 = NodePath("../../Chords")
+InVisPanel2 = NodePath("../../Tuner")
+InVisPanel3 = NodePath("../../Dashboard")
+
+[node name="Label2" type="Label" parent="Navbar/Button2"]
+layout_mode = 0
+offset_top = 7.0
+offset_right = 266.0
+offset_bottom = 58.0
+text = "Scales"
+label_settings = SubResource("LabelSettings_f6m7g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" parent="Navbar" node_paths=PackedStringArray("VisPanel", "InVisPanel1", "InVisPanel2", "InVisPanel3") instance=ExtResource("2_ay8h4")]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 307.0
+offset_right = 265.0
+offset_bottom = 376.0
+VisPanel = NodePath("../../Chords")
+InVisPanel1 = NodePath("../../Scale")
+InVisPanel2 = NodePath("../../Tuner")
+InVisPanel3 = NodePath("../../Dashboard")
+
+[node name="Label2" type="Label" parent="Navbar/Button4"]
+layout_mode = 0
+offset_top = 7.0
+offset_right = 266.0
+offset_bottom = 58.0
+text = "Chords
+"
+label_settings = SubResource("LabelSettings_f6m7g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuner" parent="." instance=ExtResource("1_0gm48")]
+visible = false
+layout_mode = 0
+offset_left = 299.0
+offset_top = 101.0
+offset_right = 1136.0
+offset_bottom = 631.0
+
+[node name="Label" type="Label" parent="Tuner"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 230.0
+offset_bottom = 60.0
+text = "Tuner"
+label_settings = SubResource("LabelSettings_20b4i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" parent="Tuner" instance=ExtResource("3_pghb2")]
+position = Vector2(-202, -91)
+
+[node name="Scale" parent="." instance=ExtResource("1_0gm48")]
+visible = false
+layout_mode = 0
+offset_left = 299.0
+offset_top = 101.0
+offset_right = 1136.0
+offset_bottom = 631.0
+
+[node name="Label" type="Label" parent="Scale"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 230.0
+offset_bottom = 60.0
+text = "Scale"
+label_settings = SubResource("LabelSettings_20b4i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" parent="Scale" instance=ExtResource("4_tx6tm")]
+position = Vector2(20, 76)
+scale = Vector2(0.7, 0.7)
+
+[node name="Chords" parent="." instance=ExtResource("1_0gm48")]
+visible = false
+layout_mode = 0
+offset_left = 299.0
+offset_top = 101.0
+offset_right = 1136.0
+offset_bottom = 631.0
+
+[node name="Label" type="Label" parent="Chords"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 230.0
+offset_bottom = 60.0
+text = "Chords
+"
+label_settings = SubResource("LabelSettings_20b4i")
+horizontal_alignment = 1
+vertical_alignment = 1

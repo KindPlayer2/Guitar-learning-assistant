@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckc8to864bqj4"]
+
+[ext_resource type="Texture2D" uid="uid://me2jpbaafg18" path="res://Untitled.png" id="1_l2c52"]
+[ext_resource type="Texture2D" uid="uid://b2jv3o7pllest" path="res://Untitled(1).png" id="2_q76n1"]
+[ext_resource type="Texture2D" uid="uid://c5ibnjbtydkab" path="res://pause-removebg-preview.png" id="3_mnftr"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.03, 0.03)
+
+[node name="Correct" type="Sprite2D" parent="Panel"]
+visible = false
+texture = ExtResource("1_l2c52")
+
+[node name="Wrong" type="Sprite2D" parent="Panel"]
+visible = false
+position = Vector2(-10, -15)
+texture = ExtResource("2_q76n1")
+
+[node name="Wait" type="Sprite2D" parent="Panel"]
+visible = false
+position = Vector2(-9, -16)
+scale = Vector2(2, 2)
+texture = ExtResource("3_mnftr")

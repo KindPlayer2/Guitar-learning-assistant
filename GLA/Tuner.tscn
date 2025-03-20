@@ -1,0 +1,153 @@
+[gd_scene load_steps=10 format=3 uid="uid://biaqjq2swqes2"]
+
+[ext_resource type="Script" path="res://tuner.gd" id="1_5rb2c"]
+[ext_resource type="Texture2D" uid="uid://dpscy1jboajby" path="res://assets/171509-200.png" id="1_jyiwk"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_lki07"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sblyf"]
+bg_color = Color(0.917647, 0.45098, 0, 1)
+border_width_left = 2
+border_width_bottom = 5
+border_color = Color(0.870588, 0.215686, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75ugj"]
+bg_color = Color(0.917485, 0.451246, 0, 1)
+border_width_left = 2
+border_width_bottom = 5
+border_color = Color(0.870588, 0.215686, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0.384314, 0.6)
+shadow_size = 3
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7tdrg"]
+bg_color = Color(0.917647, 0.45098, 0, 1)
+border_width_top = 5
+border_width_right = 2
+border_color = Color(0.870588, 0.215686, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0.227451, 0.6)
+shadow_size = 4
+
+[sub_resource type="Theme" id="Theme_tpxp3"]
+Button/styles/focus = null
+Button/styles/hover = SubResource("StyleBoxFlat_sblyf")
+Button/styles/normal = SubResource("StyleBoxFlat_75ugj")
+Button/styles/pressed = SubResource("StyleBoxFlat_7tdrg")
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ib82"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fr1vt"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5rb2c")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamMicrophone_lki07")
+autoplay = true
+bus = &"Record"
+
+[node name="Headstock" type="Sprite2D" parent="."]
+position = Vector2(600, 300)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_jyiwk")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_tpxp3")
+
+[node name="LowEButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 306.0
+offset_right = 506.0
+offset_bottom = 337.0
+focus_mode = 0
+toggle_mode = true
+text = "Low E"
+
+[node name="AButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 253.0
+offset_right = 506.0
+offset_bottom = 284.0
+focus_mode = 0
+toggle_mode = true
+text = "A"
+
+[node name="DButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 198.0
+offset_right = 506.0
+offset_bottom = 229.0
+focus_mode = 0
+toggle_mode = true
+text = "D"
+
+[node name="GButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 693.0
+offset_top = 194.0
+offset_right = 746.0
+offset_bottom = 225.0
+focus_mode = 0
+toggle_mode = true
+text = "G"
+
+[node name="BButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 693.0
+offset_top = 254.0
+offset_right = 746.0
+offset_bottom = 285.0
+focus_mode = 0
+toggle_mode = true
+text = "B"
+
+[node name="HighEButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 693.0
+offset_top = 306.0
+offset_right = 746.0
+offset_bottom = 337.0
+focus_mode = 0
+toggle_mode = true
+text = "High E"
+
+[node name="Tune" type="Label" parent="."]
+offset_left = 577.0
+offset_top = 490.0
+offset_right = 623.0
+offset_bottom = 513.0
+text = "Tune
+"
+label_settings = SubResource("LabelSettings_1ib82")
+
+[node name="Freq" type="Label" parent="."]
+offset_left = 579.0
+offset_top = 534.0
+offset_right = 625.0
+offset_bottom = 557.0
+text = "Freq
+"
+label_settings = SubResource("LabelSettings_fr1vt")

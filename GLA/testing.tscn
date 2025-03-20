@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://y3l3g52wg443"]
+
+[ext_resource type="Script" path="res://testing.gd" id="1_aobn6"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_5hxtc"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_aobn6")
+
+[node name="FreqLabel" type="Label" parent="."]
+offset_left = 521.0
+offset_top = 265.0
+offset_right = 602.0
+offset_bottom = 288.0
+text = "Frequency
+"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamMicrophone_5hxtc")
+autoplay = true
+bus = &"Record"
