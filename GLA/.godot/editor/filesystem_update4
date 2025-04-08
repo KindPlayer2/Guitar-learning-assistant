@@ -1,6 +1,5 @@
 res://default_bus_layout.tres
-res://MainDashboard.tscn
 res://Scale.tscn
-res://dashboard.tscn
+res://MainDashboard.tscn
 res://correctionPanel.tscn
-res://scale.gd
+res://dashboardbutton.tscn

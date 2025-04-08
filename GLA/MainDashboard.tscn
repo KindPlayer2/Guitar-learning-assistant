@@ -1,198 +1,52 @@
-[gd_scene load_steps=13 format=3 uid="uid://dlsa2a63w0sue"]
+[gd_scene load_steps=18 format=3 uid="uid://dlsa2a63w0sue"]
 
 [ext_resource type="PackedScene" uid="uid://bx88dpk780kua" path="res://WhitePanel.tscn" id="1_0gm48"]
 [ext_resource type="PackedScene" uid="uid://b3w5lb8ogfdok" path="res://navbutton.tscn" id="2_ay8h4"]
+[ext_resource type="PackedScene" uid="uid://bspae17tnocsm" path="res://dashboardbutton.tscn" id="2_l2p1d"]
 [ext_resource type="PackedScene" uid="uid://biaqjq2swqes2" path="res://Tuner.tscn" id="3_pghb2"]
 [ext_resource type="PackedScene" uid="uid://77omgu2fg34l" path="res://Scale.tscn" id="4_tx6tm"]
-
-[sub_resource type="FontVariation" id="FontVariation_cxjkt"]
-variation_embolden = 0.35
-spacing_glyph = 1
-spacing_space = 8
+[ext_resource type="Script" uid="uid://dqpgg308ay28s" path="res://basicChordsOptions.gd" id="6_5c4hw"]
+[ext_resource type="Texture2D" uid="uid://b8eyevirtgexp" path="res://sounds/C-Beginner-Guitar-Chord-Diagram.png" id="7_5nrwi"]
+[ext_resource type="Texture2D" uid="uid://i2sy7xaaplqv" path="res://sounds/G-Beginner-Guitar-Chord-Diagram.png" id="8_uu0tn"]
+[ext_resource type="Texture2D" uid="uid://duw20xuf4fymx" path="res://sounds/D-Beginner-Guitar-Chord-Diagram.png" id="9_06ga7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_20b4i"]
-font = SubResource("FontVariation_cxjkt")
 font_size = 25
 font_color = Color(0, 0, 0, 1)
-outline_size = 1
+outline_size = 3
 outline_color = Color(0, 0, 0, 1)
 
-[sub_resource type="FontVariation" id="FontVariation_3vjhj"]
-variation_embolden = 0.35
-spacing_glyph = 1
-spacing_space = 8
+[sub_resource type="LabelSettings" id="LabelSettings_h3f8j"]
+font_size = 23
+font_color = Color(0, 0, 0, 1)
+outline_size = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_mvaqs"]
+font_size = 18
+font_color = Color(0, 0, 0, 1)
+outline_size = 2
 
 [sub_resource type="LabelSettings" id="LabelSettings_56qhg"]
-font = SubResource("FontVariation_3vjhj")
 font_size = 25
 font_color = Color(0, 0, 0, 1)
-outline_size = 1
+outline_size = 4
 outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="FontVariation" id="FontVariation_5madt"]
-variation_embolden = 0.35
-spacing_glyph = 1
-spacing_space = 8
 
 [sub_resource type="LabelSettings" id="LabelSettings_i2oy6"]
-font = SubResource("FontVariation_5madt")
 font_size = 25
 font_color = Color(0, 0, 0, 1)
-outline_size = 1
+outline_size = 3
 outline_color = Color(0, 0, 0, 1)
 
-[sub_resource type="FontFile" id="FontFile_telgl"]
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/17/0/ascent = 0.0
-cache/0/17/0/descent = 0.0
-cache/0/17/0/underline_position = 0.0
-cache/0/17/0/underline_thickness = 0.0
-cache/0/17/0/scale = 1.0
-cache/0/18/0/ascent = 0.0
-cache/0/18/0/descent = 0.0
-cache/0/18/0/underline_position = 0.0
-cache/0/18/0/underline_thickness = 0.0
-cache/0/18/0/scale = 1.0
-cache/0/19/0/ascent = 0.0
-cache/0/19/0/descent = 0.0
-cache/0/19/0/underline_position = 0.0
-cache/0/19/0/underline_thickness = 0.0
-cache/0/19/0/scale = 1.0
-cache/0/20/0/ascent = 0.0
-cache/0/20/0/descent = 0.0
-cache/0/20/0/underline_position = 0.0
-cache/0/20/0/underline_thickness = 0.0
-cache/0/20/0/scale = 1.0
-cache/0/21/0/ascent = 0.0
-cache/0/21/0/descent = 0.0
-cache/0/21/0/underline_position = 0.0
-cache/0/21/0/underline_thickness = 0.0
-cache/0/21/0/scale = 1.0
-cache/0/22/0/ascent = 0.0
-cache/0/22/0/descent = 0.0
-cache/0/22/0/underline_position = 0.0
-cache/0/22/0/underline_thickness = 0.0
-cache/0/22/0/scale = 1.0
-cache/0/23/0/ascent = 0.0
-cache/0/23/0/descent = 0.0
-cache/0/23/0/underline_position = 0.0
-cache/0/23/0/underline_thickness = 0.0
-cache/0/23/0/scale = 1.0
-cache/0/24/0/ascent = 0.0
-cache/0/24/0/descent = 0.0
-cache/0/24/0/underline_position = 0.0
-cache/0/24/0/underline_thickness = 0.0
-cache/0/24/0/scale = 1.0
-cache/0/25/0/ascent = 0.0
-cache/0/25/0/descent = 0.0
-cache/0/25/0/underline_position = 0.0
-cache/0/25/0/underline_thickness = 0.0
-cache/0/25/0/scale = 1.0
-cache/0/26/0/ascent = 0.0
-cache/0/26/0/descent = 0.0
-cache/0/26/0/underline_position = 0.0
-cache/0/26/0/underline_thickness = 0.0
-cache/0/26/0/scale = 1.0
-cache/0/27/0/ascent = 0.0
-cache/0/27/0/descent = 0.0
-cache/0/27/0/underline_position = 0.0
-cache/0/27/0/underline_thickness = 0.0
-cache/0/27/0/scale = 1.0
-cache/0/28/0/ascent = 0.0
-cache/0/28/0/descent = 0.0
-cache/0/28/0/underline_position = 0.0
-cache/0/28/0/underline_thickness = 0.0
-cache/0/28/0/scale = 1.0
-cache/0/29/0/ascent = 0.0
-cache/0/29/0/descent = 0.0
-cache/0/29/0/underline_position = 0.0
-cache/0/29/0/underline_thickness = 0.0
-cache/0/29/0/scale = 1.0
-cache/0/30/0/ascent = 0.0
-cache/0/30/0/descent = 0.0
-cache/0/30/0/underline_position = 0.0
-cache/0/30/0/underline_thickness = 0.0
-cache/0/30/0/scale = 1.0
-cache/0/31/0/ascent = 0.0
-cache/0/31/0/descent = 0.0
-cache/0/31/0/underline_position = 0.0
-cache/0/31/0/underline_thickness = 0.0
-cache/0/31/0/scale = 1.0
-cache/0/32/0/ascent = 0.0
-cache/0/32/0/descent = 0.0
-cache/0/32/0/underline_position = 0.0
-cache/0/32/0/underline_thickness = 0.0
-cache/0/32/0/scale = 1.0
-cache/0/33/0/ascent = 0.0
-cache/0/33/0/descent = 0.0
-cache/0/33/0/underline_position = 0.0
-cache/0/33/0/underline_thickness = 0.0
-cache/0/33/0/scale = 1.0
-cache/0/34/0/ascent = 0.0
-cache/0/34/0/descent = 0.0
-cache/0/34/0/underline_position = 0.0
-cache/0/34/0/underline_thickness = 0.0
-cache/0/34/0/scale = 1.0
-cache/0/35/0/ascent = 0.0
-cache/0/35/0/descent = 0.0
-cache/0/35/0/underline_position = 0.0
-cache/0/35/0/underline_thickness = 0.0
-cache/0/35/0/scale = 1.0
-cache/0/36/0/ascent = 0.0
-cache/0/36/0/descent = 0.0
-cache/0/36/0/underline_position = 0.0
-cache/0/36/0/underline_thickness = 0.0
-cache/0/36/0/scale = 1.0
-cache/0/37/0/ascent = 0.0
-cache/0/37/0/descent = 0.0
-cache/0/37/0/underline_position = 0.0
-cache/0/37/0/underline_thickness = 0.0
-cache/0/37/0/scale = 1.0
-cache/0/38/0/ascent = 0.0
-cache/0/38/0/descent = 0.0
-cache/0/38/0/underline_position = 0.0
-cache/0/38/0/underline_thickness = 0.0
-cache/0/38/0/scale = 1.0
-cache/0/39/0/ascent = 0.0
-cache/0/39/0/descent = 0.0
-cache/0/39/0/underline_position = 0.0
-cache/0/39/0/underline_thickness = 0.0
-cache/0/39/0/scale = 1.0
-cache/0/40/0/ascent = 0.0
-cache/0/40/0/descent = 0.0
-cache/0/40/0/underline_position = 0.0
-cache/0/40/0/underline_thickness = 0.0
-cache/0/40/0/scale = 1.0
-cache/0/41/0/ascent = 0.0
-cache/0/41/0/descent = 0.0
-cache/0/41/0/underline_position = 0.0
-cache/0/41/0/underline_thickness = 0.0
-cache/0/41/0/scale = 1.0
-cache/0/42/0/ascent = 0.0
-cache/0/42/0/descent = 0.0
-cache/0/42/0/underline_position = 0.0
-cache/0/42/0/underline_thickness = 0.0
-cache/0/42/0/scale = 1.0
-cache/0/43/0/ascent = 0.0
-cache/0/43/0/descent = 0.0
-cache/0/43/0/underline_position = 0.0
-cache/0/43/0/underline_thickness = 0.0
-cache/0/43/0/scale = 1.0
-cache/0/44/0/ascent = 0.0
-cache/0/44/0/descent = 0.0
-cache/0/44/0/underline_position = 0.0
-cache/0/44/0/underline_thickness = 0.0
-cache/0/44/0/scale = 1.0
-
 [sub_resource type="LabelSettings" id="LabelSettings_f6m7g"]
-font = SubResource("FontFile_telgl")
 font_size = 25
 font_color = Color(0.144063, 0.144063, 0.144063, 1)
 shadow_size = 0
+
+[sub_resource type="Theme" id="Theme_s6nhh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gm301"]
+font_color = Color(0, 0, 0, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -218,6 +72,84 @@ text = "Dashboard"
 label_settings = SubResource("LabelSettings_20b4i")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="TunerDashButton" parent="Dashboard" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 62.0
+offset_right = 227.0
+offset_bottom = 344.0
+
+[node name="Label" type="Label" parent="Dashboard/TunerDashButton"]
+layout_mode = 0
+offset_right = 168.0
+offset_bottom = 29.0
+text = "Tuner"
+label_settings = SubResource("LabelSettings_h3f8j")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Dashboard/TunerDashButton"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 47.0
+offset_right = 191.0
+offset_bottom = 277.0
+text = "Tune up your guitar from a selection of different tunings using your devices microphone input"
+label_settings = SubResource("LabelSettings_mvaqs")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="ScalesDashButton" parent="Dashboard" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 62.0
+offset_right = 505.0
+offset_bottom = 344.0
+
+[node name="Label" type="Label" parent="Dashboard/ScalesDashButton"]
+layout_mode = 0
+offset_right = 168.0
+offset_bottom = 29.0
+text = "Scales"
+label_settings = SubResource("LabelSettings_h3f8j")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Dashboard/ScalesDashButton"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 47.0
+offset_right = 208.0
+offset_bottom = 283.0
+text = "Learn your scales using the interactive scale feedback page with a selection of all the must learn scales"
+label_settings = SubResource("LabelSettings_mvaqs")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="ChordDashButton" parent="Dashboard" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 572.0
+offset_top = 62.0
+offset_right = 785.0
+offset_bottom = 344.0
+
+[node name="Label" type="Label" parent="Dashboard/ChordDashButton"]
+layout_mode = 0
+offset_right = 168.0
+offset_bottom = 29.0
+text = "Chords"
+label_settings = SubResource("LabelSettings_h3f8j")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Dashboard/ChordDashButton"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 47.0
+offset_right = 208.0
+offset_bottom = 283.0
+text = "Learn all the essential chords in the interactive chord learning page that teaches chord positions "
+label_settings = SubResource("LabelSettings_mvaqs")
+vertical_alignment = 3
+autowrap_mode = 2
 
 [node name="Header" parent="." instance=ExtResource("1_0gm48")]
 layout_mode = 0
@@ -400,3 +332,220 @@ text = "Chords
 label_settings = SubResource("LabelSettings_20b4i")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="Chords" node_paths=PackedStringArray("intro_page", "c_page", "g_page", "d_page")]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 59.0
+offset_right = 165.0
+offset_bottom = 81.0
+theme = SubResource("Theme_s6nhh")
+selected = 0
+item_count = 9
+popup/item_0/text = "Basic Chords"
+popup/item_0/id = 0
+popup/item_1/text = "C"
+popup/item_1/id = 1
+popup/item_2/text = "G"
+popup/item_2/id = 2
+popup/item_3/text = "D"
+popup/item_3/id = 3
+popup/item_4/text = "A"
+popup/item_4/id = 4
+popup/item_5/text = "E"
+popup/item_5/id = 5
+popup/item_6/text = "A minor"
+popup/item_6/id = 6
+popup/item_7/text = "D minor"
+popup/item_7/id = 7
+popup/item_8/text = "E minor"
+popup/item_8/id = 8
+script = ExtResource("6_5c4hw")
+intro_page = NodePath("../description")
+c_page = NodePath("../C chord")
+g_page = NodePath("../G chord")
+d_page = NodePath("../D chord")
+
+[node name="OptionButton2" type="OptionButton" parent="Chords"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 59.0
+offset_right = 385.0
+offset_bottom = 90.0
+theme = SubResource("Theme_s6nhh")
+selected = 0
+item_count = 9
+popup/item_0/text = "Intermediate Chords"
+popup/item_0/id = 0
+popup/item_1/text = "C"
+popup/item_1/id = 1
+popup/item_2/text = "G"
+popup/item_2/id = 2
+popup/item_3/text = "D"
+popup/item_3/id = 3
+popup/item_4/text = "A"
+popup/item_4/id = 4
+popup/item_5/text = "E"
+popup/item_5/id = 5
+popup/item_6/text = "A minor"
+popup/item_6/id = 6
+popup/item_7/text = "D minor"
+popup/item_7/id = 7
+popup/item_8/text = "E minor"
+popup/item_8/id = 8
+
+[node name="OptionButton3" type="OptionButton" parent="Chords"]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 57.0
+offset_right = 560.0
+offset_bottom = 88.0
+theme = SubResource("Theme_s6nhh")
+selected = 0
+item_count = 9
+popup/item_0/text = "Advanced Chords"
+popup/item_0/id = 0
+popup/item_1/text = "C"
+popup/item_1/id = 1
+popup/item_2/text = "G"
+popup/item_2/id = 2
+popup/item_3/text = "D"
+popup/item_3/id = 3
+popup/item_4/text = "A"
+popup/item_4/id = 4
+popup/item_5/text = "E"
+popup/item_5/id = 5
+popup/item_6/text = "A minor"
+popup/item_6/id = 6
+popup/item_7/text = "D minor"
+popup/item_7/id = 7
+popup/item_8/text = "E minor"
+popup/item_8/id = 8
+
+[node name="description" parent="Chords" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 773.0
+offset_bottom = 457.0
+
+[node name="Label" type="Label" parent="Chords/description"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 689.0
+offset_bottom = 278.0
+text = "Welcome to the Chord Library—your guide to mastering guitar chords step by step! Here, chords are organized by difficulty, starting with Basic open chords for beginners, moving to Intermediate barre and extended chords and finally Advanced jazz  chords for seasoned players.
+To begin, pick a basic chord—each comes with a clear fretboard diagram, a short description of its sound, and examples of songs that use it. Play along with the audio reference, or turn on the microphone feedback to check if you’re fretting the chord correctly. As you improve, explore harder chords and learn how they fit into progressions. Ready to start? Choose a chord and let’s play!"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="C chord" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 117.0
+offset_right = 773.0
+offset_bottom = 497.0
+
+[node name="chordImage" parent="Chords/C chord" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/C chord"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("7_5nrwi")
+
+[node name="Label" type="Label" parent="Chords/C chord"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 203.0
+offset_right = 689.0
+offset_bottom = 370.0
+text = "C Major Chord:
+1st finger on fret 1 (B string),
+ 2nd finger on fret 2 (D string), 
+and 3rd finger on fret 3 (A string). 
+
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="G chord" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 117.0
+offset_right = 773.0
+offset_bottom = 497.0
+
+[node name="chordImage" parent="Chords/G chord" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/G chord"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("8_uu0tn")
+
+[node name="Label" type="Label" parent="Chords/G chord"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 203.0
+offset_right = 689.0
+offset_bottom = 370.0
+text = "G Major Chord:
+Place your 2nd finger on fret 3 (low E string), 1st finger on fret 2 (A string), and 3rd finger on fret 3 (high E string)
+
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="D chord" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 117.0
+offset_right = 773.0
+offset_bottom = 497.0
+
+[node name="chordImage" parent="Chords/D chord" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/D chord"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("9_06ga7")
+
+[node name="Label" type="Label" parent="Chords/D chord"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 203.0
+offset_right = 689.0
+offset_bottom = 370.0
+text = "D Major Chord:
+Place your 1st finger on fret 2 (G string), 2nd finger on fret 2 (high E string), and 3rd finger on fret 3 (B string). 
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2

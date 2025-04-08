@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://77omgu2fg34l"]
 
-[ext_resource type="Script" path="res://scale.gd" id="1_43e8v"]
+[ext_resource type="Script" uid="uid://byey6vjmk1dnd" path="res://scale.gd" id="1_43e8v"]
 [ext_resource type="PackedScene" uid="uid://ckc8to864bqj4" path="res://correctionPanel.tscn" id="2_8k43e"]
 [ext_resource type="Texture2D" uid="uid://cml8gyhdu3rmf" path="res://CORRECTFRETBOARD.png" id="2_l32g2"]
 
