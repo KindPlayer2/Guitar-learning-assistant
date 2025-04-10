@@ -1,5 +1,11 @@
 res://default_bus_layout.tres
-res://Scale.tscn
 res://MainDashboard.tscn
 res://correctionPanel.tscn
 res://dashboardbutton.tscn
+res://ScaleNew.tscn
+res://navbutton.tscn
+res://PlayChordbutton.tscn
+res://CChord.tscn
+res://chord_detect.gd
+res://ChordDetect.tscn
+res://Detect_C.tscn

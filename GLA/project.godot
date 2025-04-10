@@ -14,9 +14,10 @@ config/name="Guitar learning assistant "
 config/description="This is a demo showing how a spectrum analyzer can be built using Godot."
 config/tags=PackedStringArray("audio", "demo", "official", "visualization")
 run/main_scene="res://show_spectrum.tscn"
-config/features=PackedStringArray("4.4")
+config/features=PackedStringArray("4.3")
 run/low_processor_mode=true
-config/icon="res://assets/171509-200.png"
+boot_splash/image="res://assets/logo.png"
+config/icon="res://assets/logo.png"
 
 [audio]
 
@@ -24,6 +25,8 @@ driver/enable_input=true
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/vsync/vsync_mode=0
@@ -32,4 +35,4 @@ window/vsync/vsync_mode=0
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0.695503, 0.695503, 0.695503, 1)
+environment/defaults/default_clear_color=Color(0.868985, 0.868985, 0.868985, 1)

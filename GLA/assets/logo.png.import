@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duw20xuf4fymx"
-path="res://.godot/imported/D-Beginner-Guitar-Chord-Diagram.png-5feb6279adb60553d5b8cec3f5ae8e93.ctex"
+uid="uid://dj72lxdaek1nv"
+path="res://.godot/imported/logo.png-e2220799298e3631eb0e245316e0501a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sounds/D-Beginner-Guitar-Chord-Diagram.png"
-dest_files=["res://.godot/imported/D-Beginner-Guitar-Chord-Diagram.png-5feb6279adb60553d5b8cec3f5ae8e93.ctex"]
+source_file="res://assets/logo.png"
+dest_files=["res://.godot/imported/logo.png-e2220799298e3631eb0e245316e0501a.ctex"]
 
 [params]
 

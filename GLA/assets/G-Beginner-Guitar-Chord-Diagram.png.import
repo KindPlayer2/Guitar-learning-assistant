@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i2sy7xaaplqv"
-path="res://.godot/imported/G-Beginner-Guitar-Chord-Diagram.png-defa7f78bd5d5f3342090786767b02ef.ctex"
+path="res://.godot/imported/G-Beginner-Guitar-Chord-Diagram.png-0fb1986e4b1aa2c56187ff3517642e98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sounds/G-Beginner-Guitar-Chord-Diagram.png"
-dest_files=["res://.godot/imported/G-Beginner-Guitar-Chord-Diagram.png-defa7f78bd5d5f3342090786767b02ef.ctex"]
+source_file="res://assets/G-Beginner-Guitar-Chord-Diagram.png"
+dest_files=["res://.godot/imported/G-Beginner-Guitar-Chord-Diagram.png-0fb1986e4b1aa2c56187ff3517642e98.ctex"]
 
 [params]
 

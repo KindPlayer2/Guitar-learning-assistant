@@ -7,7 +7,7 @@ extends Button
 @export var InVisPanel3: Panel
 
 func _on_pressed() -> void:
-	# Set the visible panel to visible
+	# Set the visible panel to viible
 	VisPanel.visible = true
 	
 	# Set the invisible panels to invisible

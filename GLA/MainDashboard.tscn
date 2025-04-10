@@ -1,14 +1,39 @@
-[gd_scene load_steps=18 format=3 uid="uid://dlsa2a63w0sue"]
+[gd_scene load_steps=43 format=3 uid="uid://dlsa2a63w0sue"]
 
 [ext_resource type="PackedScene" uid="uid://bx88dpk780kua" path="res://WhitePanel.tscn" id="1_0gm48"]
 [ext_resource type="PackedScene" uid="uid://b3w5lb8ogfdok" path="res://navbutton.tscn" id="2_ay8h4"]
 [ext_resource type="PackedScene" uid="uid://bspae17tnocsm" path="res://dashboardbutton.tscn" id="2_l2p1d"]
 [ext_resource type="PackedScene" uid="uid://biaqjq2swqes2" path="res://Tuner.tscn" id="3_pghb2"]
-[ext_resource type="PackedScene" uid="uid://77omgu2fg34l" path="res://Scale.tscn" id="4_tx6tm"]
-[ext_resource type="Script" uid="uid://dqpgg308ay28s" path="res://basicChordsOptions.gd" id="6_5c4hw"]
-[ext_resource type="Texture2D" uid="uid://b8eyevirtgexp" path="res://sounds/C-Beginner-Guitar-Chord-Diagram.png" id="7_5nrwi"]
-[ext_resource type="Texture2D" uid="uid://i2sy7xaaplqv" path="res://sounds/G-Beginner-Guitar-Chord-Diagram.png" id="8_uu0tn"]
-[ext_resource type="Texture2D" uid="uid://duw20xuf4fymx" path="res://sounds/D-Beginner-Guitar-Chord-Diagram.png" id="9_06ga7"]
+[ext_resource type="PackedScene" uid="uid://dj3q25x6ivqun" path="res://ScaleNew.tscn" id="5_umrph"]
+[ext_resource type="Script" path="res://basicChordsOptions.gd" id="6_5c4hw"]
+[ext_resource type="Texture2D" uid="uid://b8eyevirtgexp" path="res://assets/C-Beginner-Guitar-Chord-Diagram.png" id="7_5nrwi"]
+[ext_resource type="PackedScene" uid="uid://dbq4kd5r7e4wn" path="res://PlayChordbutton.tscn" id="8_2mnhu"]
+[ext_resource type="Texture2D" uid="uid://i2sy7xaaplqv" path="res://assets/G-Beginner-Guitar-Chord-Diagram.png" id="8_uu0tn"]
+[ext_resource type="Texture2D" uid="uid://duw20xuf4fymx" path="res://assets/D-Beginner-Guitar-Chord-Diagram.png" id="9_06ga7"]
+[ext_resource type="AudioStream" uid="uid://e10jvtwky45m" path="res://sounds/C.mp3" id="9_m5yhp"]
+[ext_resource type="PackedScene" uid="uid://4iyhwmho5s7n" path="res://Detect_C.tscn" id="10_oq1f2"]
+[ext_resource type="Texture2D" uid="uid://bbj1h1teywnmk" path="res://assets/A-Beginner-Guitar-Chord-Diagram.png" id="10_wqn53"]
+[ext_resource type="Texture2D" uid="uid://yn537sfcp6pm" path="res://assets/Amchord.png" id="11_dwygm"]
+[ext_resource type="AudioStream" uid="uid://c3wi1np2nntfe" path="res://sounds/G.mp3" id="11_k2dtg"]
+[ext_resource type="Texture2D" uid="uid://bs443rut45fk2" path="res://assets/B-Beginner-Guitar-Chord-Diagram.png" id="12_7hbth"]
+[ext_resource type="AudioStream" uid="uid://17ig18wspju2" path="res://sounds/D.mp3" id="13_frxyk"]
+[ext_resource type="Texture2D" uid="uid://bmepgs15n4e1h" path="res://assets/Bmchord.png" id="13_r6wkp"]
+[ext_resource type="Texture2D" uid="uid://kwpah6g30m0p" path="res://assets/Dmchord.png" id="14_wenvt"]
+[ext_resource type="AudioStream" uid="uid://qr5kgswnwfbu" path="res://sounds/A.mp3" id="15_8brnu"]
+[ext_resource type="Texture2D" uid="uid://dj61kwpi6m4si" path="res://assets/D7-Beginner-Guitar-Chord-Diagram.png" id="15_tbfiq"]
+[ext_resource type="Texture2D" uid="uid://c8866f8ebhumq" path="res://assets/Echord.png" id="16_a4h3b"]
+[ext_resource type="AudioStream" uid="uid://bxd3dtfiml1gh" path="res://sounds/Am.mp3" id="17_0n075"]
+[ext_resource type="Texture2D" uid="uid://cy7f8f47klwam" path="res://assets/Emchord.png" id="17_v7etr"]
+[ext_resource type="Texture2D" uid="uid://bpo0vbbcmdb8h" path="res://assets/Fchord.png" id="18_gno8f"]
+[ext_resource type="AudioStream" uid="uid://cmruvktygiktu" path="res://sounds/B.mp3" id="19_lr30v"]
+[ext_resource type="Texture2D" uid="uid://bxcql4top14tb" path="res://assets/g7chord.png" id="19_st3ya"]
+[ext_resource type="AudioStream" uid="uid://do3iemodqetfn" path="res://sounds/Bm.mp3" id="21_vn8aq"]
+[ext_resource type="AudioStream" uid="uid://oqqjvcf0wc3u" path="res://sounds/Dm.mp3" id="23_s7iff"]
+[ext_resource type="AudioStream" uid="uid://b38o7451krlng" path="res://sounds/D7.mp3" id="25_k4lur"]
+[ext_resource type="AudioStream" uid="uid://fvuulc1t0lem" path="res://sounds/E.mp3" id="27_frugi"]
+[ext_resource type="AudioStream" uid="uid://bha6ujvubmp1v" path="res://sounds/Em.mp3" id="29_qydp7"]
+[ext_resource type="AudioStream" uid="uid://b5lxkrls00my" path="res://sounds/F.mp3" id="31_7x5r2"]
+[ext_resource type="AudioStream" uid="uid://l8a8e6hnjsnl" path="res://sounds/G7.mp3" id="33_5cioi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_20b4i"]
 font_size = 25
@@ -17,12 +42,13 @@ outline_size = 3
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_h3f8j"]
-font_size = 23
+font_size = 35
 font_color = Color(0, 0, 0, 1)
-outline_size = 2
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_mvaqs"]
-font_size = 18
+font_size = 39
 font_color = Color(0, 0, 0, 1)
 outline_size = 2
 
@@ -46,6 +72,7 @@ shadow_size = 0
 [sub_resource type="Theme" id="Theme_s6nhh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_gm301"]
+font_size = 34
 font_color = Color(0, 0, 0, 1)
 
 [node name="Control" type="Control"]
@@ -60,8 +87,8 @@ grow_vertical = 2
 layout_mode = 0
 offset_left = 299.0
 offset_top = 101.0
-offset_right = 1136.0
-offset_bottom = 631.0
+offset_right = 1904.0
+offset_bottom = 1065.0
 
 [node name="Label" type="Label" parent="Dashboard"]
 layout_mode = 0
@@ -75,15 +102,16 @@ vertical_alignment = 1
 
 [node name="TunerDashButton" parent="Dashboard" instance=ExtResource("2_l2p1d")]
 layout_mode = 0
-offset_left = 28.0
+offset_left = 41.0
 offset_top = 62.0
-offset_right = 227.0
-offset_bottom = 344.0
+offset_right = 515.0
+offset_bottom = 853.0
 
 [node name="Label" type="Label" parent="Dashboard/TunerDashButton"]
 layout_mode = 0
-offset_right = 168.0
-offset_bottom = 29.0
+offset_left = 136.0
+offset_right = 304.0
+offset_bottom = 40.0
 text = "Tuner"
 label_settings = SubResource("LabelSettings_h3f8j")
 horizontal_alignment = 1
@@ -92,50 +120,52 @@ horizontal_alignment = 1
 layout_mode = 0
 offset_left = 12.0
 offset_top = 47.0
-offset_right = 191.0
-offset_bottom = 277.0
-text = "Tune up your guitar from a selection of different tunings using your devices microphone input"
+offset_right = 469.0
+offset_bottom = 793.0
+text = "Tune up your guitar from a selection of different tunings, starting with standard tuning, using your devices microphone input to detect and accordingly adjust the strings"
 label_settings = SubResource("LabelSettings_mvaqs")
 vertical_alignment = 3
 autowrap_mode = 2
 
-[node name="ScalesDashButton" parent="Dashboard" instance=ExtResource("2_l2p1d")]
+[node name="ScaleDashButton" parent="Dashboard" instance=ExtResource("2_l2p1d")]
 layout_mode = 0
-offset_left = 286.0
+offset_left = 558.0
 offset_top = 62.0
-offset_right = 505.0
-offset_bottom = 344.0
+offset_right = 1032.0
+offset_bottom = 853.0
 
-[node name="Label" type="Label" parent="Dashboard/ScalesDashButton"]
+[node name="Label" type="Label" parent="Dashboard/ScaleDashButton"]
 layout_mode = 0
-offset_right = 168.0
-offset_bottom = 29.0
+offset_left = 150.0
+offset_right = 318.0
+offset_bottom = 40.0
 text = "Scales"
 label_settings = SubResource("LabelSettings_h3f8j")
 horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="Dashboard/ScalesDashButton"]
+[node name="Label2" type="Label" parent="Dashboard/ScaleDashButton"]
 layout_mode = 0
-offset_left = 18.0
+offset_left = 12.0
 offset_top = 47.0
-offset_right = 208.0
-offset_bottom = 283.0
-text = "Learn your scales using the interactive scale feedback page with a selection of all the must learn scales"
+offset_right = 471.0
+offset_bottom = 789.0
+text = "Learn all the different guitar scales in this app, navigate to the Scales page hit the start button and follow along with the steps to learn the guitar scale, the audio detection will tell you when you play a correct note and incorrect notes"
 label_settings = SubResource("LabelSettings_mvaqs")
 vertical_alignment = 3
 autowrap_mode = 2
 
 [node name="ChordDashButton" parent="Dashboard" instance=ExtResource("2_l2p1d")]
 layout_mode = 0
-offset_left = 572.0
+offset_left = 1079.0
 offset_top = 62.0
-offset_right = 785.0
-offset_bottom = 344.0
+offset_right = 1553.0
+offset_bottom = 853.0
 
 [node name="Label" type="Label" parent="Dashboard/ChordDashButton"]
 layout_mode = 0
-offset_right = 168.0
-offset_bottom = 29.0
+offset_left = 158.0
+offset_right = 326.0
+offset_bottom = 40.0
 text = "Chords"
 label_settings = SubResource("LabelSettings_h3f8j")
 horizontal_alignment = 1
@@ -144,9 +174,9 @@ horizontal_alignment = 1
 layout_mode = 0
 offset_left = 12.0
 offset_top = 47.0
-offset_right = 208.0
-offset_bottom = 283.0
-text = "Learn all the essential chords in the interactive chord learning page that teaches chord positions "
+offset_right = 471.0
+offset_bottom = 797.0
+text = "Learn all of the guitar chords on this interactive page, this page includes a fretboard diagram to show how it should look, a description of how to place your fingers, a button to hear how the chord should sound, and an option to hear feedback on your audio input."
 label_settings = SubResource("LabelSettings_mvaqs")
 vertical_alignment = 3
 autowrap_mode = 2
@@ -155,7 +185,7 @@ autowrap_mode = 2
 layout_mode = 0
 offset_left = 16.0
 offset_top = 16.0
-offset_right = 1136.0
+offset_right = 1905.0
 offset_bottom = 85.0
 
 [node name="Label" type="Label" parent="Header"]
@@ -172,7 +202,7 @@ layout_mode = 0
 offset_left = 16.0
 offset_top = 102.0
 offset_right = 283.0
-offset_bottom = 632.0
+offset_bottom = 1065.0
 
 [node name="Label2" type="Label" parent="Navbar"]
 layout_mode = 0
@@ -276,8 +306,8 @@ visible = false
 layout_mode = 0
 offset_left = 299.0
 offset_top = 101.0
-offset_right = 1136.0
-offset_bottom = 631.0
+offset_right = 1904.0
+offset_bottom = 1065.0
 
 [node name="Label" type="Label" parent="Tuner"]
 layout_mode = 0
@@ -290,15 +320,16 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Node2D" parent="Tuner" instance=ExtResource("3_pghb2")]
-position = Vector2(-202, -91)
+position = Vector2(-420, -253)
+scale = Vector2(2, 2)
 
 [node name="Scale" parent="." instance=ExtResource("1_0gm48")]
 visible = false
 layout_mode = 0
 offset_left = 299.0
 offset_top = 101.0
-offset_right = 1136.0
-offset_bottom = 631.0
+offset_right = 1904.0
+offset_bottom = 1065.0
 
 [node name="Label" type="Label" parent="Scale"]
 layout_mode = 0
@@ -310,17 +341,17 @@ label_settings = SubResource("LabelSettings_20b4i")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Node2D" parent="Scale" instance=ExtResource("4_tx6tm")]
-position = Vector2(20, 76)
-scale = Vector2(0.7, 0.7)
+[node name="Node2D" parent="Scale" instance=ExtResource("5_umrph")]
+position = Vector2(347, 244)
+scale = Vector2(0.8, 0.8)
 
 [node name="Chords" parent="." instance=ExtResource("1_0gm48")]
 visible = false
 layout_mode = 0
 offset_left = 299.0
 offset_top = 101.0
-offset_right = 1136.0
-offset_bottom = 631.0
+offset_right = 1904.0
+offset_bottom = 1065.0
 
 [node name="Label" type="Label" parent="Chords"]
 layout_mode = 0
@@ -333,108 +364,71 @@ label_settings = SubResource("LabelSettings_20b4i")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="OptionButton" type="OptionButton" parent="Chords" node_paths=PackedStringArray("intro_page", "c_page", "g_page", "d_page")]
+[node name="OptionButton" type="OptionButton" parent="Chords" node_paths=PackedStringArray("intro_page", "c_page", "g_page", "d_page", "a_page", "am_page", "b_page", "bm_page", "dm_page", "d7_page", "e_page", "em_page", "f_page", "g7_page")]
 layout_mode = 0
 offset_left = 68.0
 offset_top = 59.0
-offset_right = 165.0
-offset_bottom = 81.0
+offset_right = 267.0
+offset_bottom = 124.0
 theme = SubResource("Theme_s6nhh")
 selected = 0
-item_count = 9
-popup/item_0/text = "Basic Chords"
-popup/item_0/id = 0
-popup/item_1/text = "C"
+item_count = 14
+popup/item_0/text = "Chords"
+popup/item_1/text = "A"
 popup/item_1/id = 1
-popup/item_2/text = "G"
+popup/item_2/text = "A minor"
 popup/item_2/id = 2
-popup/item_3/text = "D"
+popup/item_3/text = "B"
 popup/item_3/id = 3
-popup/item_4/text = "A"
+popup/item_4/text = "B minor"
 popup/item_4/id = 4
-popup/item_5/text = "E"
+popup/item_5/text = "C"
 popup/item_5/id = 5
-popup/item_6/text = "A minor"
+popup/item_6/text = "D"
 popup/item_6/id = 6
 popup/item_7/text = "D minor"
 popup/item_7/id = 7
-popup/item_8/text = "E minor"
+popup/item_8/text = "D7"
 popup/item_8/id = 8
+popup/item_9/text = "E"
+popup/item_9/id = 9
+popup/item_10/text = "E minor"
+popup/item_10/id = 10
+popup/item_11/text = "F"
+popup/item_11/id = 11
+popup/item_12/text = "G"
+popup/item_12/id = 12
+popup/item_13/text = "G7"
+popup/item_13/id = 13
 script = ExtResource("6_5c4hw")
 intro_page = NodePath("../description")
 c_page = NodePath("../C chord")
 g_page = NodePath("../G chord")
 d_page = NodePath("../D chord")
-
-[node name="OptionButton2" type="OptionButton" parent="Chords"]
-layout_mode = 0
-offset_left = 220.0
-offset_top = 59.0
-offset_right = 385.0
-offset_bottom = 90.0
-theme = SubResource("Theme_s6nhh")
-selected = 0
-item_count = 9
-popup/item_0/text = "Intermediate Chords"
-popup/item_0/id = 0
-popup/item_1/text = "C"
-popup/item_1/id = 1
-popup/item_2/text = "G"
-popup/item_2/id = 2
-popup/item_3/text = "D"
-popup/item_3/id = 3
-popup/item_4/text = "A"
-popup/item_4/id = 4
-popup/item_5/text = "E"
-popup/item_5/id = 5
-popup/item_6/text = "A minor"
-popup/item_6/id = 6
-popup/item_7/text = "D minor"
-popup/item_7/id = 7
-popup/item_8/text = "E minor"
-popup/item_8/id = 8
-
-[node name="OptionButton3" type="OptionButton" parent="Chords"]
-layout_mode = 0
-offset_left = 417.0
-offset_top = 57.0
-offset_right = 560.0
-offset_bottom = 88.0
-theme = SubResource("Theme_s6nhh")
-selected = 0
-item_count = 9
-popup/item_0/text = "Advanced Chords"
-popup/item_0/id = 0
-popup/item_1/text = "C"
-popup/item_1/id = 1
-popup/item_2/text = "G"
-popup/item_2/id = 2
-popup/item_3/text = "D"
-popup/item_3/id = 3
-popup/item_4/text = "A"
-popup/item_4/id = 4
-popup/item_5/text = "E"
-popup/item_5/id = 5
-popup/item_6/text = "A minor"
-popup/item_6/id = 6
-popup/item_7/text = "D minor"
-popup/item_7/id = 7
-popup/item_8/text = "E minor"
-popup/item_8/id = 8
+a_page = NodePath("../A")
+am_page = NodePath("../Am")
+b_page = NodePath("../B")
+bm_page = NodePath("../Bm")
+dm_page = NodePath("../D minor")
+d7_page = NodePath("../D7")
+e_page = NodePath("../E")
+em_page = NodePath("../Em")
+f_page = NodePath("../F")
+g7_page = NodePath("../G7")
 
 [node name="description" parent="Chords" instance=ExtResource("2_l2p1d")]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 168.0
-offset_right = 773.0
-offset_bottom = 457.0
+offset_right = 1530.0
+offset_bottom = 887.0
 
 [node name="Label" type="Label" parent="Chords/description"]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 8.0
-offset_right = 689.0
-offset_bottom = 278.0
+offset_right = 1444.0
+offset_bottom = 711.0
 text = "Welcome to the Chord Library—your guide to mastering guitar chords step by step! Here, chords are organized by difficulty, starting with Basic open chords for beginners, moving to Intermediate barre and extended chords and finally Advanced jazz  chords for seasoned players.
 To begin, pick a basic chord—each comes with a clear fretboard diagram, a short description of its sound, and examples of songs that use it. Play along with the audio reference, or turn on the microphone feedback to check if you’re fretting the chord correctly. As you improve, explore harder chords and learn how they fit into progressions. Ready to start? Choose a chord and let’s play!"
 label_settings = SubResource("LabelSettings_gm301")
@@ -445,9 +439,9 @@ autowrap_mode = 2
 visible = false
 layout_mode = 0
 offset_left = 69.0
-offset_top = 117.0
-offset_right = 773.0
-offset_bottom = 497.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
 
 [node name="chordImage" parent="Chords/C chord" instance=ExtResource("2_l2p1d")]
 layout_mode = 0
@@ -465,10 +459,10 @@ texture = ExtResource("7_5nrwi")
 
 [node name="Label" type="Label" parent="Chords/C chord"]
 layout_mode = 0
-offset_left = 370.0
-offset_top = 203.0
-offset_right = 689.0
-offset_bottom = 370.0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 355.0
+offset_bottom = 756.0
 text = "C Major Chord:
 1st finger on fret 1 (B string),
  2nd finger on fret 2 (D string), 
@@ -479,13 +473,29 @@ label_settings = SubResource("LabelSettings_gm301")
 vertical_alignment = 3
 autowrap_mode = 2
 
+[node name="Button" parent="Chords/C chord" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/C chord"]
+stream = ExtResource("9_m5yhp")
+
+[node name="Chord" parent="Chords/C chord" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "C"
+
 [node name="G chord" parent="Chords" instance=ExtResource("2_l2p1d")]
 visible = false
 layout_mode = 0
 offset_left = 69.0
-offset_top = 117.0
-offset_right = 773.0
-offset_bottom = 497.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
 
 [node name="chordImage" parent="Chords/G chord" instance=ExtResource("2_l2p1d")]
 layout_mode = 0
@@ -503,10 +513,10 @@ texture = ExtResource("8_uu0tn")
 
 [node name="Label" type="Label" parent="Chords/G chord"]
 layout_mode = 0
-offset_left = 370.0
-offset_top = 203.0
-offset_right = 689.0
-offset_bottom = 370.0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 410.0
+offset_bottom = 756.0
 text = "G Major Chord:
 Place your 2nd finger on fret 3 (low E string), 1st finger on fret 2 (A string), and 3rd finger on fret 3 (high E string)
 
@@ -515,13 +525,29 @@ label_settings = SubResource("LabelSettings_gm301")
 vertical_alignment = 3
 autowrap_mode = 2
 
+[node name="Button" parent="Chords/G chord" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/G chord"]
+stream = ExtResource("11_k2dtg")
+
+[node name="Chord" parent="Chords/G chord" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "C"
+
 [node name="D chord" parent="Chords" instance=ExtResource("2_l2p1d")]
 visible = false
 layout_mode = 0
 offset_left = 69.0
-offset_top = 117.0
-offset_right = 773.0
-offset_bottom = 497.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
 
 [node name="chordImage" parent="Chords/D chord" instance=ExtResource("2_l2p1d")]
 layout_mode = 0
@@ -539,13 +565,550 @@ texture = ExtResource("9_06ga7")
 
 [node name="Label" type="Label" parent="Chords/D chord"]
 layout_mode = 0
-offset_left = 370.0
-offset_top = 203.0
-offset_right = 689.0
-offset_bottom = 370.0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 474.0
+offset_bottom = 714.0
 text = "D Major Chord:
 Place your 1st finger on fret 2 (G string), 2nd finger on fret 2 (high E string), and 3rd finger on fret 3 (B string). 
 "
 label_settings = SubResource("LabelSettings_gm301")
 vertical_alignment = 3
 autowrap_mode = 2
+
+[node name="Button" parent="Chords/D chord" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/D chord"]
+stream = ExtResource("13_frxyk")
+
+[node name="Chord" parent="Chords/D chord" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "D"
+
+[node name="A" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/A" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/A"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("10_wqn53")
+
+[node name="Label" type="Label" parent="Chords/A"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 355.0
+offset_bottom = 756.0
+text = "A Major Chord:
+1st finger on fret 2 (D string),
+ 2nd finger on fret 2 (G string), 
+and 3rd finger on fret 2 (B string). 
+
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/A" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/A"]
+stream = ExtResource("15_8brnu")
+
+[node name="Chord" parent="Chords/A" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "A"
+
+[node name="Am" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/Am" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/Am"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("11_dwygm")
+
+[node name="Label" type="Label" parent="Chords/Am"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 410.0
+offset_bottom = 756.0
+text = "A minor Chord:
+Place your 1st finger on fret 1 (B string), 2nd finger on fret 2 (D string), and 3rd finger on fret 2 (G string)
+
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/Am" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/Am"]
+stream = ExtResource("17_0n075")
+
+[node name="Chord" parent="Chords/Am" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "Am"
+
+[node name="B" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/B" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/B"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("12_7hbth")
+
+[node name="Label" type="Label" parent="Chords/B"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 474.0
+offset_bottom = 714.0
+text = "B Major Chord:
+bar fret 2 with first finger 2nd finger on fret 4 (D string),  3rd finger on fret 4 (G string) 4th finger on fret 4 (B string). 
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/B" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/B"]
+stream = ExtResource("19_lr30v")
+
+[node name="Chord" parent="Chords/B" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "B"
+
+[node name="Bm" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/Bm" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/Bm"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("13_r6wkp")
+
+[node name="Label" type="Label" parent="Chords/Bm"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 427.0
+offset_bottom = 756.0
+text = "B minor Chord:
+1st finger bar fret 1,
+ 2nd finger on fret 2 (B string), 
+ 3rd finger on fret 3 (D string), and 4th finger on fret 3 (D string). 
+
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/Bm" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/Bm"]
+stream = ExtResource("21_vn8aq")
+
+[node name="Chord" parent="Chords/Bm" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "Bm"
+
+[node name="D minor" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/D minor" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/D minor"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("14_wenvt")
+
+[node name="Label" type="Label" parent="Chords/D minor"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 458.0
+offset_bottom = 756.0
+text = "D minor Chord:
+Place your 1st finger on fret 1 (high E string), 2nd finger on fret 2 (G string), and 3rd finger on fret 3 (B string)
+
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/D minor" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/D minor"]
+stream = ExtResource("23_s7iff")
+
+[node name="Chord" parent="Chords/D minor" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "D"
+
+[node name="D7" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/D7" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/D7"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("15_tbfiq")
+
+[node name="Label" type="Label" parent="Chords/D7"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 474.0
+offset_bottom = 714.0
+text = "D 7 Chord:
+Place your 1st finger on fret 1 (B string), 2nd finger on fret 2 (G string), and 3rd finger on fret 2 (high E string). 
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/D7" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/D7"]
+stream = ExtResource("25_k4lur")
+
+[node name="Chord" parent="Chords/D7" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "D7"
+
+[node name="E" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/E" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/E"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("16_a4h3b")
+
+[node name="Label" type="Label" parent="Chords/E"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 355.0
+offset_bottom = 756.0
+text = "E Major Chord:
+1st finger on fret 1 (G string),
+ 2nd finger on fret 2 (A string), 
+and 3rd finger on fret 2 (D string). 
+
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/E" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/E"]
+stream = ExtResource("27_frugi")
+
+[node name="Chord" parent="Chords/E" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "E"
+
+[node name="Em" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/Em" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/Em"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("17_v7etr")
+
+[node name="Label" type="Label" parent="Chords/Em"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 410.0
+offset_bottom = 714.0
+text = "E minor Chord:
+Place your 1st finger on fret 2 (A string), 2nd finger on fret 2 (D string)
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/Em" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/Em"]
+stream = ExtResource("29_qydp7")
+
+[node name="Chord" parent="Chords/Em" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "Em"
+
+[node name="F" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/F" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/F"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("18_gno8f")
+
+[node name="Label" type="Label" parent="Chords/F"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 474.0
+offset_bottom = 714.0
+text = "F Major Chord:
+Bar the first fret with your first finger, 2nd finger on fret 2 (G string), 3rd finger on fret 3 (A string),  4th finger on fret 3 (D string). 
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/F" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/F"]
+stream = ExtResource("31_7x5r2")
+
+[node name="Chord" parent="Chords/F" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "F"
+
+[node name="G7" parent="Chords" instance=ExtResource("2_l2p1d")]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 168.0
+offset_right = 1530.0
+offset_bottom = 887.0
+
+[node name="chordImage" parent="Chords/G7" instance=ExtResource("2_l2p1d")]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 355.0
+offset_bottom = 360.0
+text = "
+"
+
+[node name="C-beginner-guitar-chord-diagram" type="Sprite2D" parent="Chords/G7"]
+position = Vector2(186, 160)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("19_st3ya")
+
+[node name="Label" type="Label" parent="Chords/G7"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 367.0
+offset_right = 474.0
+offset_bottom = 714.0
+text = "G7 Chord:
+Place your 1st finger on fret 1 (High E), 2nd finger on fret 2 (A string), and 3rd finger on fret 3 (Low E string). 
+"
+label_settings = SubResource("LabelSettings_gm301")
+vertical_alignment = 3
+autowrap_mode = 2
+
+[node name="Button" parent="Chords/G7" node_paths=PackedStringArray("audio_player") instance=ExtResource("8_2mnhu")]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 62.0
+offset_right = 476.0
+offset_bottom = 93.0
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chords/G7"]
+stream = ExtResource("33_5cioi")
+
+[node name="Chord" parent="Chords/G7" instance=ExtResource("10_oq1f2")]
+position = Vector2(626, 199)
+scale = Vector2(0.5, 0.5)
+chord_to_detect = "G7"

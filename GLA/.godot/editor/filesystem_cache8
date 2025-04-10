@@ -1,39 +1,72 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743070598
-basicChordsOptions.gd::GDScript::8313625743093005184::1743026944::0::1::::<>OptionButton<><><>::
-button.tscn::PackedScene::5164117487333656666::1742466247::0::1::::<><><><>::
-CORRECTFRETBOARD.png::CompressedTexture2D::5639831293400158881::1742466246::1742466246::1::::<><><>a1e36cea8a7196318f9c9378721c17a0<>res://.godot/imported/CORRECTFRETBOARD.png-2f3b328536f31692c5c2b8cdc0ad3f93.ctex::
-correctionPanel.tscn::PackedScene::5480896937872889607::1743026944::0::1::::<><><><>::uid://me2jpbaafg18::::res://Untitled.png<>uid://b2jv3o7pllest::::res://Untitled(1).png<>uid://c5ibnjbtydkab::::res://pause-removebg-preview.png
-correctly sized fretboard.png::CompressedTexture2D::2026531259413568667::1742466247::1742466247::1::::<><><>1c0650c3f601dd0f5fc24152732b1fd6<>res://.godot/imported/correctly sized fretboard.png-ae5dbc8fcbefecb870cd865959baec1a.ctex::
-dashboard.tscn::PackedScene::1659203146353017986::1742466247::0::1::::<><><><>::uid://bx88dpk780kua::::res://WhitePanel.tscn<>uid://b3w5lb8ogfdok::::res://navbutton.tscn<>uid://bspae17tnocsm::::res://dashboardbutton.tscn<>uid://biaqjq2swqes2::::res://Tuner.tscn<>uid://77omgu2fg34l::::res://Scale.tscn
-dashboardbutton.tscn::PackedScene::3680794094586243864::1743026946::0::1::::<><><><>::
-default_bus_layout.tres::AudioBusLayout::4119602603348103342::1743021671::0::1::::<><><><>::
-fretboard.png::CompressedTexture2D::3712859724921973526::1742466247::1742466247::1::::<><><>7c5380b0b615507d755c4931902abab5<>res://.godot/imported/fretboard.png-09314a75ea14995a3992d0ee53a5c81d.ctex::
-IMG_1090.jpeg.png::CompressedTexture2D::3613346105021597395::1742466246::1742466246::1::::<><><>d5e7aa9069c8bc0f2c8bf3f12ab28fb2<>res://.godot/imported/IMG_1090.jpeg.png-4cf6ca8aa92cc5bb130f036d438b5e50.ctex::
-MainDashboard.tscn::PackedScene::7968546396297699804::1743027332::0::1::::<><><><>::uid://bx88dpk780kua::::res://WhitePanel.tscn<>uid://b3w5lb8ogfdok::::res://navbutton.tscn<>uid://bspae17tnocsm::::res://dashboardbutton.tscn<>uid://biaqjq2swqes2::::res://Tuner.tscn<>uid://77omgu2fg34l::::res://Scale.tscn<>uid://dqpgg308ay28s::::res://basicChordsOptions.gd<>uid://b8eyevirtgexp::::res://sounds/C-Beginner-Guitar-Chord-Diagram.png<>uid://i2sy7xaaplqv::::res://sounds/G-Beginner-Guitar-Chord-Diagram.png<>uid://duw20xuf4fymx::::res://sounds/D-Beginner-Guitar-Chord-Diagram.png
-navbutton.gd::GDScript::4413361726063477860::1742466247::0::1::::<>Button<><><>::
-navbutton.tscn::PackedScene::4398965873809480954::1742466247::0::1::::<><><><>::res://navbutton.gd
-node_2d.gd::GDScript::5113544502607373256::1742466247::0::1::::<>Node2D<><><>::
-pause-removebg-preview.png::CompressedTexture2D::6895106106023612257::1742466247::1742466247::1::::<><><>8e024ef04449e5276253254b64d5ce77<>res://.godot/imported/pause-removebg-preview.png-eea53b6a685f8e90514c4733ed84a09c.ctex::
-README.md::TextFile::-1::1742466246::0::1::::<><><><>::
-Recording (7).mp3::AudioStreamMP3::1430488478247611148::1742466246::1742466246::1::::<><><>c82e883d3d6f6ddee4759a0f41448d0b<>res://.godot/imported/Recording (7).mp3-b44ea738634450677c29e7f1db808d33.mp3str::
-scale.gd::GDScript::4080724126912771321::1742466247::0::1::::<>Node2D<><><>::
-Scale.tscn::PackedScene::2312974899242434869::1743026944::0::1::::<><><><>::uid://byey6vjmk1dnd::::res://scale.gd<>uid://ckc8to864bqj4::::res://correctionPanel.tscn<>uid://cml8gyhdu3rmf::::res://CORRECTFRETBOARD.png
-segment.tscn::PackedScene::4586988681181708247::1742466247::0::1::::<><><><>::res://node_2d.gd<>uid://cwid3kg8gi7gk::::res://sounds/2025-02-19 23-31-25.mp3
-show_spectrum.gd::GDScript::769619862102305108::1742466247::0::1::::<>Node2D<><><>::
-show_spectrum.tscn::PackedScene::7559994868945812833::1742466247::0::1::::<><><><>::res://show_spectrum.gd
-testing.gd::GDScript::3384617149631693267::1742466247::0::1::::<>Node2D<><><>::
-testing.tscn::PackedScene::1743053076316878682::1742466247::0::1::::<><><><>::res://testing.gd
-tuner.gd::GDScript::6223914148058536078::1742466247::0::1::::<>Node2D<><><>::
-Tuner.tscn::PackedScene::2948919859757960303::1742466246::0::1::::<><><><>::res://tuner.gd<>uid://dpscy1jboajby::::res://assets/171509-200.png
-Untitled Diagram.drawio.png::CompressedTexture2D::8624295177984584592::1742466246::1742466246::1::::<><><>7eb9be5c26a63317b2019173fe1cde95<>res://.godot/imported/Untitled Diagram.drawio.png-7bad6f0b8e608b49a4f183ab497e581b.ctex::
-Untitled(1).png::CompressedTexture2D::4301424706241258223::1742466246::1742466246::1::::<><><>dbeb4db4ec80763d360d50ea7d58bdf4<>res://.godot/imported/Untitled(1).png-8bdf2654f252fa22b91a04601c19ba83.ctex::
-Untitled.png::CompressedTexture2D::852179855017727253::1742466246::1742466246::1::::<><><>0cbe24534a3d50101df5d58829fd3f93<>res://.godot/imported/Untitled.png-30da513a925d9064453decddf41ecbd4.ctex::
-WhitePanel.tscn::PackedScene::4070898376192150312::1742466246::0::1::::<><><><>::
-::res://assets/::1742466246
-171509-200.png::CompressedTexture2D::8249419177836613406::1742466246::1742466246::1::::<><><>2cd11bab36d10fa2df0644dcc2b0043f<>res://.godot/imported/171509-200.png-0983c5698a0e0cc555b3c53588f3e5b4.ctex::
-::res://sounds/::1743026424
-2025-02-19 23-31-25.mp3::AudioStreamMP3::6333743638673095830::1742466247::1742466247::1::::<><><>1fdec02190bed55db8745686f822895c<>res://.godot/imported/2025-02-19 23-31-25.mp3-0a9c6af0900622259e700c2c986d570d.mp3str::
-C-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::4712375501913245741::1743025844::1743025847::1::::<><><>a45e7e7b09c34035c3a299a6deffa851<>res://.godot/imported/C-Beginner-Guitar-Chord-Diagram.png-c883288a493e9b0f6805995810f9283a.ctex::
-D-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::8610140477280880039::1743026420::1743026420::1::::<><><>fd81ee71423519a2654b11c0d0f2a1db<>res://.godot/imported/D-Beginner-Guitar-Chord-Diagram.png-5feb6279adb60553d5b8cec3f5ae8e93.ctex::
-G-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::618386429665695897::1743026423::1743026424::1::::<><><>83df79e61bc24ec6f0ec899d87f9ff56<>res://.godot/imported/G-Beginner-Guitar-Chord-Diagram.png-defa7f78bd5d5f3342090786767b02ef.ctex::
+::res://::1744202455
+basicChordsOptions.gd::GDScript::-1::1744119860::0::1::::<>OptionButton<>::
+button.tscn::PackedScene::5164117487333656666::1744114297::0::1::::<><>::
+CChord.tscn::PackedScene::5092769724234666569::1744190976::0::1::::<><>::res://chord_detect.gd
+ChordDetect.tscn::PackedScene::2013934314600513869::1744202455::0::1::::<><>::res://chord_detect.gd<>uid://cml8gyhdu3rmf::::res://CORRECTFRETBOARD.png<>uid://ckc8to864bqj4::::res://correctionPanel.tscn
+chord_detect.gd::GDScript::-1::1744202135::0::1::::<>Node2D<>::
+CORRECTFRETBOARD.png::CompressedTexture2D::5639831293400158881::1744114296::1744114333::1::::<><>::
+correctionPanel.tscn::PackedScene::5480896937872889607::1744202449::0::1::::<><>::uid://me2jpbaafg18::::res://Untitled.png<>uid://b2jv3o7pllest::::res://Untitled(1).png<>uid://c5ibnjbtydkab::::res://pause-removebg-preview.png
+correctly sized fretboard.png::CompressedTexture2D::2026531259413568667::1744114297::1744114333::1::::<><>::
+dashboard.tscn::PackedScene::1659203146353017986::1744114297::0::1::::<><>::uid://bx88dpk780kua::::res://WhitePanel.tscn<>uid://b3w5lb8ogfdok::::res://navbutton.tscn<>uid://bspae17tnocsm::::res://dashboardbutton.tscn<>uid://biaqjq2swqes2::::res://Tuner.tscn<>uid://77omgu2fg34l::::res://Scale.tscn
+dashboardbutton.tscn::PackedScene::3680794094586243864::1744202451::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::4119602603348103342::1744187816::0::1::::<><>::
+Detect_C.tscn::PackedScene::2053462370308460613::1744202455::0::1::::<><>::res://chord_detect.gd<>uid://cml8gyhdu3rmf::::res://CORRECTFRETBOARD.png<>uid://ckc8to864bqj4::::res://correctionPanel.tscn
+fretboard.png::CompressedTexture2D::3712859724921973526::1744114297::1744114333::1::::<><>::
+IMG_1090.jpeg.png::CompressedTexture2D::3613346105021597395::1744114296::1744114334::1::::<><>::
+MainDashboard.tscn::PackedScene::7968546396297699804::1744202449::0::1::::<><>::uid://bx88dpk780kua::::res://WhitePanel.tscn<>uid://b3w5lb8ogfdok::::res://navbutton.tscn<>uid://bspae17tnocsm::::res://dashboardbutton.tscn<>uid://biaqjq2swqes2::::res://Tuner.tscn<>uid://dj3q25x6ivqun::::res://ScaleNew.tscn<>res://basicChordsOptions.gd<>uid://b8eyevirtgexp::::res://assets/C-Beginner-Guitar-Chord-Diagram.png<>uid://dbq4kd5r7e4wn::::res://PlayChordbutton.tscn<>uid://i2sy7xaaplqv::::res://assets/G-Beginner-Guitar-Chord-Diagram.png<>uid://duw20xuf4fymx::::res://assets/D-Beginner-Guitar-Chord-Diagram.png<>uid://e10jvtwky45m::::res://sounds/C.mp3<>uid://4iyhwmho5s7n::::res://Detect_C.tscn<>uid://bbj1h1teywnmk::::res://assets/A-Beginner-Guitar-Chord-Diagram.png<>uid://yn537sfcp6pm::::res://assets/Amchord.png<>uid://c3wi1np2nntfe::::res://sounds/G.mp3<>uid://bs443rut45fk2::::res://assets/B-Beginner-Guitar-Chord-Diagram.png<>uid://17ig18wspju2::::res://sounds/D.mp3<>uid://bmepgs15n4e1h::::res://assets/Bmchord.png<>uid://kwpah6g30m0p::::res://assets/Dmchord.png<>uid://qr5kgswnwfbu::::res://sounds/A.mp3<>uid://dj61kwpi6m4si::::res://assets/D7-Beginner-Guitar-Chord-Diagram.png<>uid://c8866f8ebhumq::::res://assets/Echord.png<>uid://bxd3dtfiml1gh::::res://sounds/Am.mp3<>uid://cy7f8f47klwam::::res://assets/Emchord.png<>uid://bpo0vbbcmdb8h::::res://assets/Fchord.png<>uid://cmruvktygiktu::::res://sounds/B.mp3<>uid://bxcql4top14tb::::res://assets/g7chord.png<>uid://do3iemodqetfn::::res://sounds/Bm.mp3<>uid://oqqjvcf0wc3u::::res://sounds/Dm.mp3<>uid://b38o7451krlng::::res://sounds/D7.mp3<>uid://fvuulc1t0lem::::res://sounds/E.mp3<>uid://bha6ujvubmp1v::::res://sounds/Em.mp3<>uid://b5lxkrls00my::::res://sounds/F.mp3<>uid://l8a8e6hnjsnl::::res://sounds/G7.mp3
+navbutton.gd::GDScript::-1::1744127076::0::1::::<>Button<>::
+navbutton.tscn::PackedScene::4398965873809480954::1744202453::0::1::::<><>::res://navbutton.gd
+node_2d.gd::GDScript::-1::1744114297::0::1::::<>Node2D<>::
+pause-removebg-preview.png::CompressedTexture2D::6895106106023612257::1744114297::1744114333::1::::<><>::
+PlayChordbutton.tscn::PackedScene::7264259794241107757::1744202455::0::1::::<><>::res://play_chordbutton.gd
+play_chordbutton.gd::GDScript::-1::1744128527::0::1::::<>Button<>::
+README.md::TextFile::-1::1744114296::0::1::::<><>::
+Recording (7).mp3::AudioStreamMP3::1430488478247611148::1744114296::1744114333::1::::<><>::
+scale.gd::GDScript::-1::1744114910::0::1::::<>Node2D<>::
+Scale.tscn::PackedScene::2312974899242434869::1744115135::0::1::::<><>::res://scale.gd<>uid://ckc8to864bqj4::::res://correctionPanel.tscn<>uid://cml8gyhdu3rmf::::res://CORRECTFRETBOARD.png
+ScaleNew.tscn::PackedScene::7849785521906003261::1744202451::0::1::::<><>::res://scale.gd<>uid://cml8gyhdu3rmf::::res://CORRECTFRETBOARD.png<>uid://ckc8to864bqj4::::res://correctionPanel.tscn
+segment.tscn::PackedScene::4586988681181708247::1744114297::0::1::::<><>::res://node_2d.gd<>uid://cwid3kg8gi7gk::::res://sounds/2025-02-19 23-31-25.mp3
+show_spectrum.gd::GDScript::-1::1744114297::0::1::::<>Node2D<>::
+show_spectrum.tscn::PackedScene::7559994868945812833::1744114297::0::1::::<><>::res://show_spectrum.gd
+testing.gd::GDScript::-1::1744114298::0::1::::<>Node2D<>::
+testing.tscn::PackedScene::1743053076316878682::1744114298::0::1::::<><>::res://testing.gd
+tuner.gd::GDScript::-1::1744114298::0::1::::<>Node2D<>::
+Tuner.tscn::PackedScene::2948919859757960303::1744114296::0::1::::<><>::res://tuner.gd<>uid://dpscy1jboajby::::res://assets/171509-200.png
+Untitled Diagram.drawio.png::CompressedTexture2D::8624295177984584592::1744114296::1744114333::1::::<><>::
+Untitled(1).png::CompressedTexture2D::4301424706241258223::1744114296::1744114333::1::::<><>::
+Untitled.png::CompressedTexture2D::852179855017727253::1744114296::1744114333::1::::<><>::
+WhitePanel.tscn::PackedScene::4070898376192150312::1744114296::0::1::::<><>::
+::res://assets/::1744205336
+171509-200.png::CompressedTexture2D::8249419177836613406::1744114296::1744114333::1::::<><>::
+A-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::2476781464660015302::1744117396::1744117414::1::::<><>::
+Amchord.png::CompressedTexture2D::1713242378912045118::1744117301::1744117398::1::::<><>::
+B-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::3711498543761234851::1744117572::1744117658::1::::<><>::
+Bmchord.png::CompressedTexture2D::3237866774987452931::1744117289::1744117398::1::::<><>::
+C-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::4712375501913245741::1744114298::1744124860::1::::<><>::
+D7-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::7856555033039609712::1744117330::1744117398::1::::<><>::
+D-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::8610140477280880039::1744114298::1744124860::1::::<><>::
+Dmchord.png::CompressedTexture2D::748215917724551065::1744117318::1744117398::1::::<><>::
+Echord.png::CompressedTexture2D::7159135573490728704::1744117312::1744117398::1::::<><>::
+Emchord.png::CompressedTexture2D::6523796527875419548::1744117295::1744117398::1::::<><>::
+Fchord.png::CompressedTexture2D::3469710107486769733::1744117307::1744117398::1::::<><>::
+g7chord.png::CompressedTexture2D::4005885511678817851::1744117325::1744117398::1::::<><>::
+G-Beginner-Guitar-Chord-Diagram.png::CompressedTexture2D::618386429665695897::1744114298::1744124860::1::::<><>::
+logo.png::CompressedTexture2D::7858681947166391303::1744205302::1744205346::1::::<><>::
+playing.png::CompressedTexture2D::1086243507030917638::1744126457::1744126482::1::::<><>::
+play_button.webp::CompressedTexture2D::8937749704774554294::1744126324::1744126490::1::::<><>::
+::res://sounds/::1744130415
+2025-02-19 23-31-25.mp3::AudioStreamMP3::6333743638673095830::1744114297::1744114333::1::::<><>::
+A.mp3::AudioStreamMP3::1159955631713979786::1744124747::1744128466::1::::<><>::
+Am.mp3::AudioStreamMP3::4008663659856857747::1744124777::1744128466::1::::<><>::
+B.mp3::AudioStreamMP3::5651454310072519202::1744124779::1744128466::1::::<><>::
+Bm.mp3::AudioStreamMP3::8200201970308512131::1744124783::1744128466::1::::<><>::
+C.mp3::AudioStreamMP3::335964326477546844::1744124787::1744128466::1::::<><>::
+D7.mp3::AudioStreamMP3::4420741525462319956::1744124764::1744128466::1::::<><>::
+D.mp3::AudioStreamMP3::1891467891034199423::1744130406::1744130415::1::::<><>::
+Dm.mp3::AudioStreamMP3::1016662505368232628::1744124793::1744128466::1::::<><>::
+E.mp3::AudioStreamMP3::395546788813011704::1744124815::1744128466::1::::<><>::
+Em.mp3::AudioStreamMP3::2879661037874764789::1744124752::1744128466::1::::<><>::
+F.mp3::AudioStreamMP3::132829688460101532::1744124797::1744128466::1::::<><>::
+G7.mp3::AudioStreamMP3::840260935419323205::1744124803::1744128466::1::::<><>::
+G.mp3::AudioStreamMP3::6784078173644362962::1744124800::1744128466::1::::<><>::

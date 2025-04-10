@@ -1,0 +1,686 @@
+[gd_scene load_steps=11 format=3 uid="uid://3xtg6y7j3qa4"]
+
+[ext_resource type="Script" path="res://chord_detect.gd" id="1_r5wiu"]
+[ext_resource type="Texture2D" uid="uid://cml8gyhdu3rmf" path="res://CORRECTFRETBOARD.png" id="2_ue7vy"]
+[ext_resource type="PackedScene" uid="uid://ckc8to864bqj4" path="res://correctionPanel.tscn" id="3_4upbt"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_ah50n"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qu4aq"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_502ct"]
+bg_color = Color(1.92523e-06, 0.641499, 0.931403, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6x8yv"]
+bg_color = Color(1.92523e-06, 0.641499, 0.931403, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wdt4d"]
+bg_color = Color(0, 0.433716, 0.911807, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sh31l"]
+bg_color = Color(3.85046e-07, 0.357456, 0.529132, 1)
+
+[sub_resource type="Theme" id="Theme_c76gs"]
+Button/styles/focus = SubResource("StyleBoxFlat_502ct")
+Button/styles/hover = SubResource("StyleBoxFlat_6x8yv")
+Button/styles/normal = SubResource("StyleBoxFlat_wdt4d")
+Button/styles/pressed = SubResource("StyleBoxFlat_sh31l")
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("ui_notes")]
+script = ExtResource("1_r5wiu")
+ui_notes = [NodePath("NinePatchRect/Note1"), NodePath("NinePatchRect/Note2"), NodePath("NinePatchRect/Note3"), NodePath("NinePatchRect/Note4"), NodePath("NinePatchRect/Note5"), NodePath("NinePatchRect/Note6"), NodePath("NinePatchRect/Note7"), NodePath("NinePatchRect/Note8"), NodePath("NinePatchRect/Note9"), NodePath("NinePatchRect/Note10"), NodePath("NinePatchRect/Note11"), NodePath("NinePatchRect/Note12"), NodePath("NinePatchRect/Note13"), NodePath("NinePatchRect/Note14"), NodePath("NinePatchRect/Note15"), NodePath("NinePatchRect/Note16"), NodePath("NinePatchRect/Note17"), NodePath("NinePatchRect/Note18"), NodePath("NinePatchRect/Note19"), NodePath("NinePatchRect/Note20"), NodePath("NinePatchRect/Note21"), NodePath("NinePatchRect/Note22"), NodePath("NinePatchRect/Note23"), NodePath("NinePatchRect/Note24"), NodePath("NinePatchRect/Note25"), NodePath("NinePatchRect/Note26"), NodePath("NinePatchRect/Note27"), NodePath("NinePatchRect/Note28"), NodePath("NinePatchRect/Note29"), NodePath("NinePatchRect/Note30"), NodePath("NinePatchRect/Note31"), NodePath("NinePatchRect/Note32"), NodePath("NinePatchRect/Note33"), NodePath("NinePatchRect/Note34"), NodePath("NinePatchRect/Note35"), NodePath("NinePatchRect/Note36"), NodePath("NinePatchRect/Note37"), NodePath("NinePatchRect/Note38"), NodePath("NinePatchRect/Note39"), NodePath("NinePatchRect/Note40"), NodePath("NinePatchRect/Note41"), NodePath("NinePatchRect/Note42"), NodePath("NinePatchRect/Note43"), NodePath("NinePatchRect/Note44"), NodePath("NinePatchRect/Note45"), NodePath("NinePatchRect/Note46"), NodePath("NinePatchRect/Note47"), NodePath("NinePatchRect/Note48"), NodePath("NinePatchRect/Note49"), NodePath("NinePatchRect/Note50"), NodePath("NinePatchRect/Note51"), NodePath("NinePatchRect/Note52"), NodePath("NinePatchRect/Note53"), NodePath("NinePatchRect/Note54"), NodePath("NinePatchRect/Note55"), NodePath("NinePatchRect/Note56"), NodePath("NinePatchRect/Note57"), NodePath("NinePatchRect/Note58"), NodePath("NinePatchRect/Note59"), NodePath("NinePatchRect/Note60"), NodePath("NinePatchRect/Note61"), NodePath("NinePatchRect/Note62"), NodePath("NinePatchRect/Note63"), NodePath("NinePatchRect/Note64"), NodePath("NinePatchRect/Note65"), NodePath("NinePatchRect/Note66"), NodePath("NinePatchRect/Note67"), NodePath("NinePatchRect/Note68"), NodePath("NinePatchRect/Note69"), NodePath("NinePatchRect/Note70"), NodePath("NinePatchRect/Note71"), NodePath("NinePatchRect/Note72"), NodePath("NinePatchRect/Note73"), NodePath("NinePatchRect/Note74"), NodePath("NinePatchRect/Note75"), NodePath("NinePatchRect/Note76"), NodePath("NinePatchRect/Note77"), NodePath("NinePatchRect/Note78")]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = 3.0
+offset_top = 27.0
+offset_right = 41.0
+offset_bottom = 37.0
+scale = Vector2(30, 30)
+size_flags_horizontal = 0
+texture = ExtResource("2_ue7vy")
+
+[node name="Note1" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 2.1
+offset_top = 0.733333
+offset_right = 2.1
+offset_bottom = 27.7333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note2" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 6.36667
+offset_top = 0.566667
+offset_right = 6.36667
+offset_bottom = 27.5667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note3" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 9.66667
+offset_top = 0.8
+offset_right = 9.66667
+offset_bottom = 27.8
+scale = Vector2(0.05, 0.05)
+
+[node name="Note4" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 14.0333
+offset_top = 0.566667
+offset_right = 14.0333
+offset_bottom = 27.5666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note5" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 17.2667
+offset_top = 0.533333
+offset_right = 17.2667
+offset_bottom = 27.5334
+scale = Vector2(0.05, 0.05)
+
+[node name="Note6" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 20.2667
+offset_top = 0.666667
+offset_right = 20.2667
+offset_bottom = 27.6666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note7" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 23.8
+offset_top = 0.2
+offset_right = 23.8
+offset_bottom = 27.2
+scale = Vector2(0.05, 0.05)
+
+[node name="Note8" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 26.6333
+offset_top = -0.166667
+offset_right = 26.6333
+offset_bottom = 26.8334
+scale = Vector2(0.05, 0.05)
+
+[node name="Note9" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 29.8
+offset_right = 29.8
+offset_bottom = 27.0
+scale = Vector2(0.05, 0.05)
+
+[node name="Note10" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 31.9333
+offset_top = -0.1
+offset_right = 31.9333
+offset_bottom = 26.9
+scale = Vector2(0.05, 0.05)
+
+[node name="Note11" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 34.9333
+offset_top = -0.233333
+offset_right = 34.9333
+offset_bottom = 26.7667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note12" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 36.7
+offset_top = -0.2
+offset_right = 36.7
+offset_bottom = 26.8
+scale = Vector2(0.05, 0.05)
+
+[node name="Note13" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 3.26667
+offset_top = 2.36667
+offset_right = 3.26667
+offset_bottom = 29.3666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note14" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 6.9
+offset_top = 2.43333
+offset_right = 6.9
+offset_bottom = 29.4333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note15" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 10.6333
+offset_top = 1.6
+offset_right = 10.6333
+offset_bottom = 28.6
+scale = Vector2(0.05, 0.05)
+
+[node name="Note16" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 15.0667
+offset_top = 1.6
+offset_right = 15.0667
+offset_bottom = 28.6
+scale = Vector2(0.05, 0.05)
+
+[node name="Note17" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 17.7667
+offset_top = 1.76667
+offset_right = 17.7667
+offset_bottom = 28.7667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note18" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 21.0333
+offset_top = 1.53333
+offset_right = 21.0333
+offset_bottom = 28.5333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note19" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 23.8
+offset_top = 1.6
+offset_right = 23.8
+offset_bottom = 28.6
+scale = Vector2(0.05, 0.05)
+
+[node name="Note20" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 26.6667
+offset_top = 2.2
+offset_right = 26.6667
+offset_bottom = 29.2
+scale = Vector2(0.05, 0.05)
+
+[node name="Note21" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 29.6333
+offset_top = 1.93333
+offset_right = 29.6333
+offset_bottom = 28.9333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note22" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 31.6333
+offset_top = 1.86667
+offset_right = 31.6333
+offset_bottom = 28.8667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note23" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 34.9667
+offset_top = 2.13333
+offset_right = 34.9667
+offset_bottom = 29.1334
+scale = Vector2(0.05, 0.05)
+
+[node name="Note24" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 37.1
+offset_top = 2.03333
+offset_right = 37.1
+offset_bottom = 29.0333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note25" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 1.76667
+offset_top = 4.0
+offset_right = 1.76667
+offset_bottom = 31.0
+scale = Vector2(0.05, 0.05)
+
+[node name="Note26" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 5.76667
+offset_top = 3.9
+offset_right = 5.76667
+offset_bottom = 30.9
+scale = Vector2(0.05, 0.05)
+
+[node name="Note27" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 9.7
+offset_top = 4.13333
+offset_right = 9.7
+offset_bottom = 31.1333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note28" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 13.9667
+offset_top = 3.96667
+offset_right = 13.9667
+offset_bottom = 30.9667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note29" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 17.2333
+offset_top = 3.9
+offset_right = 17.2333
+offset_bottom = 30.9
+scale = Vector2(0.05, 0.05)
+
+[node name="Note30" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 20.2
+offset_top = 3.76667
+offset_right = 20.2
+offset_bottom = 30.7667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note31" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 23.3
+offset_top = 4.2
+offset_right = 23.3
+offset_bottom = 31.2
+scale = Vector2(0.05, 0.05)
+
+[node name="Note32" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 26.5
+offset_top = 4.06667
+offset_right = 26.5
+offset_bottom = 31.0666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note33" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 29.9333
+offset_top = 3.93333
+offset_right = 29.9333
+offset_bottom = 30.9333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note34" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 31.7
+offset_top = 3.73333
+offset_right = 31.7
+offset_bottom = 30.7334
+scale = Vector2(0.05, 0.05)
+
+[node name="Note35" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 34.8667
+offset_top = 4.03333
+offset_right = 34.8667
+offset_bottom = 31.0333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note36" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 36.7
+offset_top = 4.0
+offset_right = 36.7
+offset_bottom = 31.0
+scale = Vector2(0.05, 0.05)
+
+[node name="Note37" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 3.16667
+offset_top = 5.26667
+offset_right = 3.16667
+offset_bottom = 32.2667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note38" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 6.9
+offset_top = 5.03333
+offset_right = 6.9
+offset_bottom = 32.0334
+scale = Vector2(0.05, 0.05)
+
+[node name="Note39" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 11.0667
+offset_top = 5.26667
+offset_right = 11.0667
+offset_bottom = 32.2666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note40" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 14.5667
+offset_top = 5.33333
+offset_right = 14.5667
+offset_bottom = 32.3333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note41" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 16.7333
+offset_top = 5.86667
+offset_right = 16.7333
+offset_bottom = 32.8666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note42" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 19.9667
+offset_top = 5.7
+offset_right = 19.9667
+offset_bottom = 32.7
+scale = Vector2(0.05, 0.05)
+
+[node name="Note43" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 23.2
+offset_top = 5.83333
+offset_right = 23.2
+offset_bottom = 32.8334
+scale = Vector2(0.05, 0.05)
+
+[node name="Note44" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 26.8667
+offset_top = 5.8
+offset_right = 26.8667
+offset_bottom = 32.8
+scale = Vector2(0.05, 0.05)
+
+[node name="Note45" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 29.7
+offset_top = 5.56667
+offset_right = 29.7
+offset_bottom = 32.5667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note46" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 31.7667
+offset_top = 5.73333
+offset_right = 31.7667
+offset_bottom = 32.7334
+scale = Vector2(0.05, 0.05)
+
+[node name="Note47" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 34.6333
+offset_top = 5.93333
+offset_right = 34.6333
+offset_bottom = 32.9333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note48" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 36.7667
+offset_top = 5.86667
+offset_right = 36.7667
+offset_bottom = 32.8667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note49" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 1.83333
+offset_top = 7.13333
+offset_right = 1.83333
+offset_bottom = 34.1333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note50" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 6.4
+offset_top = 6.9
+offset_right = 6.4
+offset_bottom = 33.9
+scale = Vector2(0.05, 0.05)
+
+[node name="Note51" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 9.8
+offset_top = 7.2
+offset_right = 9.8
+offset_bottom = 34.2
+scale = Vector2(0.05, 0.05)
+
+[node name="Note52" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 13.6333
+offset_top = 7.23333
+offset_right = 13.6333
+offset_bottom = 34.2333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note53" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 16.8333
+offset_top = 7.33333
+offset_right = 16.8333
+offset_bottom = 34.3333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note54" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 19.8
+offset_top = 7.03333
+offset_right = 19.8
+offset_bottom = 34.0333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note55" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 23.8333
+offset_top = 7.1
+offset_right = 23.8333
+offset_bottom = 34.1
+scale = Vector2(0.05, 0.05)
+
+[node name="Note56" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 27.1667
+offset_top = 7.43333
+offset_right = 27.1667
+offset_bottom = 34.4333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note57" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 29.5333
+offset_top = 7.0
+offset_right = 29.5333
+offset_bottom = 34.0
+scale = Vector2(0.05, 0.05)
+
+[node name="Note58" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 31.9667
+offset_top = 7.36667
+offset_right = 31.9667
+offset_bottom = 34.3666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note59" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 34.7667
+offset_top = 7.33333
+offset_right = 34.7667
+offset_bottom = 34.3333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note60" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 37.1667
+offset_top = 7.4
+offset_right = 37.1667
+offset_bottom = 34.4
+scale = Vector2(0.05, 0.05)
+
+[node name="Note61" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 3.06667
+offset_top = 8.7
+offset_right = 3.06667
+offset_bottom = 35.7
+scale = Vector2(0.05, 0.05)
+
+[node name="Note62" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 7.23333
+offset_top = 8.9
+offset_right = 7.23333
+offset_bottom = 35.9
+scale = Vector2(0.05, 0.05)
+
+[node name="Note63" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 10.8
+offset_top = 8.9
+offset_right = 10.8
+offset_bottom = 35.9
+scale = Vector2(0.05, 0.05)
+
+[node name="Note64" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 14.7667
+offset_top = 8.73333
+offset_right = 14.7667
+offset_bottom = 35.7333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note65" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 17.6667
+offset_top = 8.8
+offset_right = 17.6667
+offset_bottom = 35.8
+scale = Vector2(0.05, 0.05)
+
+[node name="Note66" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 21.2333
+offset_top = 8.93333
+offset_right = 21.2333
+offset_bottom = 35.9333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note67" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 23.7333
+offset_top = 9.06667
+offset_right = 23.7333
+offset_bottom = 36.0667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note68" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 26.9
+offset_top = 9.06667
+offset_right = 26.9
+offset_bottom = 36.0666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note69" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 29.5
+offset_top = 9.13333
+offset_right = 29.5
+offset_bottom = 36.1333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note70" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 31.8
+offset_top = 8.96667
+offset_right = 31.8
+offset_bottom = 35.9667
+scale = Vector2(0.05, 0.05)
+
+[node name="Note71" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 34.7667
+offset_top = 9.2
+offset_right = 34.7667
+offset_bottom = 36.2
+scale = Vector2(0.05, 0.05)
+
+[node name="Note72" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 37.3333
+offset_top = 9.1
+offset_right = 37.3333
+offset_bottom = 36.1
+scale = Vector2(0.05, 0.05)
+
+[node name="Note73" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = 0.0666667
+offset_top = 0.633333
+offset_right = 0.0666656
+offset_bottom = 27.6333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note74" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = -0.0333333
+offset_top = 2.03333
+offset_right = -0.0333328
+offset_bottom = 29.0333
+scale = Vector2(0.05, 0.05)
+
+[node name="Note75" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = -0.0666667
+offset_top = 3.66667
+offset_right = -0.0666656
+offset_bottom = 30.6666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note76" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = -0.1
+offset_top = 5.36667
+offset_right = -0.0999985
+offset_bottom = 32.3666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note77" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = -0.133333
+offset_top = 7.06667
+offset_right = -0.133335
+offset_bottom = 34.0666
+scale = Vector2(0.05, 0.05)
+
+[node name="Note78" parent="NinePatchRect" instance=ExtResource("3_4upbt")]
+layout_mode = 1
+offset_left = -0.0333333
+offset_top = 8.63333
+offset_right = -0.0333328
+offset_bottom = 35.6333
+scale = Vector2(0.05, 0.05)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamMicrophone_ah50n")
+bus = &"Record"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 187.0
+offset_top = 410.0
+offset_right = 227.0
+offset_bottom = 433.0
+text = "This will contain the Fret detected string detected and frequency"
+label_settings = SubResource("LabelSettings_qu4aq")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 444.0
+offset_top = 604.0
+offset_right = 608.0
+offset_bottom = 674.0
+theme = SubResource("Theme_c76gs")
+text = "	Start"

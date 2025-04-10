@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://77omgu2fg34l"]
 
-[ext_resource type="Script" uid="uid://byey6vjmk1dnd" path="res://scale.gd" id="1_43e8v"]
+[ext_resource type="Script" path="res://scale.gd" id="1_43e8v"]
 [ext_resource type="PackedScene" uid="uid://ckc8to864bqj4" path="res://correctionPanel.tscn" id="2_8k43e"]
 [ext_resource type="Texture2D" uid="uid://cml8gyhdu3rmf" path="res://CORRECTFRETBOARD.png" id="2_l32g2"]
 
@@ -9,11 +9,9 @@
 [sub_resource type="LabelSettings" id="LabelSettings_qu4aq"]
 font_color = Color(0, 0, 0, 1)
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("ui_notes", "debug_label", "visibility_timer")]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("ui_notes")]
 script = ExtResource("1_43e8v")
 ui_notes = [NodePath("NinePatchRect/Note1"), NodePath("NinePatchRect/Note2"), NodePath("NinePatchRect/Note3"), NodePath("NinePatchRect/Note4"), NodePath("NinePatchRect/Note5"), NodePath("NinePatchRect/Note6"), NodePath("NinePatchRect/Note7"), NodePath("NinePatchRect/Note8"), NodePath("NinePatchRect/Note9"), NodePath("NinePatchRect/Note10"), NodePath("NinePatchRect/Note11"), NodePath("NinePatchRect/Note12"), NodePath("NinePatchRect/Note13"), NodePath("NinePatchRect/Note14"), NodePath("NinePatchRect/Note15"), NodePath("NinePatchRect/Note16"), NodePath("NinePatchRect/Note17"), NodePath("NinePatchRect/Note18"), NodePath("NinePatchRect/Note19"), NodePath("NinePatchRect/Note20"), NodePath("NinePatchRect/Note21"), NodePath("NinePatchRect/Note22"), NodePath("NinePatchRect/Note23"), NodePath("NinePatchRect/Note24"), NodePath("NinePatchRect/Note25"), NodePath("NinePatchRect/Note26"), NodePath("NinePatchRect/Note27"), NodePath("NinePatchRect/Note28"), NodePath("NinePatchRect/Note29"), NodePath("NinePatchRect/Note30"), NodePath("NinePatchRect/Note31"), NodePath("NinePatchRect/Note32"), NodePath("NinePatchRect/Note33"), NodePath("NinePatchRect/Note34"), NodePath("NinePatchRect/Note35"), NodePath("NinePatchRect/Note36"), NodePath("NinePatchRect/Note37"), NodePath("NinePatchRect/Note38"), NodePath("NinePatchRect/Note39"), NodePath("NinePatchRect/Note40"), NodePath("NinePatchRect/Note41"), NodePath("NinePatchRect/Note42"), NodePath("NinePatchRect/Note43"), NodePath("NinePatchRect/Note44"), NodePath("NinePatchRect/Note45"), NodePath("NinePatchRect/Note46"), NodePath("NinePatchRect/Note47"), NodePath("NinePatchRect/Note48"), NodePath("NinePatchRect/Note49"), NodePath("NinePatchRect/Note50"), NodePath("NinePatchRect/Note51"), NodePath("NinePatchRect/Note52"), NodePath("NinePatchRect/Note53"), NodePath("NinePatchRect/Note54"), NodePath("NinePatchRect/Note55"), NodePath("NinePatchRect/Note56"), NodePath("NinePatchRect/Note57"), NodePath("NinePatchRect/Note58"), NodePath("NinePatchRect/Note59"), NodePath("NinePatchRect/Note60"), NodePath("NinePatchRect/Note61"), NodePath("NinePatchRect/Note62"), NodePath("NinePatchRect/Note63"), NodePath("NinePatchRect/Note64"), NodePath("NinePatchRect/Note65"), NodePath("NinePatchRect/Note66"), NodePath("NinePatchRect/Note67"), NodePath("NinePatchRect/Note68"), NodePath("NinePatchRect/Note69"), NodePath("NinePatchRect/Note70"), NodePath("NinePatchRect/Note71"), NodePath("NinePatchRect/Note72"), NodePath("NinePatchRect/Note73"), NodePath("NinePatchRect/Note74"), NodePath("NinePatchRect/Note75"), NodePath("NinePatchRect/Note76"), NodePath("NinePatchRect/Note77"), NodePath("NinePatchRect/Note78")]
-debug_label = NodePath("Label")
-visibility_timer = NodePath("Timer")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 offset_left = 3.0
